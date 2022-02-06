@@ -1,0 +1,89 @@
+{
+  "id": "a3073633-a48c-4027-9618-ad960b395d7a",
+  "name": "Demo#1",
+  "questions": [
+    {
+      "id": "9c899b79-986c-4ac6-b167-de98ba98c729",
+      "type": "date",
+      "title": "Date of birth",
+      "qn_code": "DATE_OF_BIRTH",
+      "properties": { "responseCodes": [{ "code": 0 }] },
+      "position": 1,
+      "required": false
+    },
+    {
+      "id": "85c19fd9-abed-4e22-9932-303b3b0a0340",
+      "type": "multiple_choice",
+      "title": "Gender",
+      "qn_code": "GENDER",
+      "properties": {
+        "choices": [
+          {
+            "id": "991f76d5-7651-4dfe-8a3f-c4ad0ebf0d49",
+            "label": "Male",
+            "position": 1
+          },
+          {
+            "id": "3f6cf148-c12b-44bd-aa05-387fb621fcbc",
+            "label": "Female",
+            "position": 2
+          }
+        ],
+        "responseCodes": [
+          {
+            "questionChoiceId": "991f76d5-7651-4dfe-8a3f-c4ad0ebf0d49",
+            "code": 0
+          },
+          {
+            "questionChoiceId": "3f6cf148-c12b-44bd-aa05-387fb621fcbc",
+            "code": 1
+          }
+        ]
+      },
+      "position": 2,
+      "required": false
+    },
+    {
+      "id": "2eeba622-43e9-4c84-8765-8f9ad3d91050",
+      "type": "multiple_choice",
+      "title": "Ethnicity (If mixed please indicate all)",
+      "properties": {
+        "choices": [
+          {
+            "id": "991f76d5-7651-4dfe-8a3f-c4ad0ebf0d49",
+            "label": "Chinese",
+            "position": 1
+          },
+          {
+            "id": "42e393b1-3505-40ce-9e12-687db7068ccc",
+            "label": "Malay",
+            "position": 2
+          },
+          {
+            "id": "eda55266-cc49-4e42-a188-d3166f595198",
+            "label": "Other",
+            "position": 3
+          }
+        ],
+        "responseCodes": [
+          {
+            "questionChoiceId": "991f76d5-7651-4dfe-8a3f-c4ad0ebf0d49",
+            "code": 0
+          },
+          {
+            "questionChoiceId": "42e393b1-3505-40ce-9e12-687db7068ccc",
+            "code": 1
+          },
+          {
+            "questionChoiceId": "eda55266-cc49-4e42-a188-d3166f595198",
+            "code": 2
+          }
+        ]
+      },
+      "position": 3,
+      "required": false
+    }
+  ],
+  "logicJumps": [],
+  "status": "draft"
+}

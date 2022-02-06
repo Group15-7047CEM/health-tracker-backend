@@ -1,0 +1,334 @@
+{
+  "intro": {
+    "step": "intro",
+    "action": null,
+    "redirectTo": null,
+    "messages": [
+      {
+        "id": 1,
+        "text": "Welcome to Glow, I am your Diabetes education assistant.",
+        "type": "text"
+      },
+      {
+        "id": 2,
+        "text": "The all in one app for your diabetic needs.",
+        "type": "text"
+      },
+      {
+        "id": 3,
+        "text": "Let’s create your account or if you already have an account let’s login.",
+        "type": "text"
+      }
+    ],
+    "options": [
+      {
+        "id": 1,
+        "text": "Create an account",
+        "type": "button",
+        "redirectTo": "createAccount"
+      },
+      {
+        "id": 2,
+        "text": "Login",
+        "type": "button",
+        "redirectTo": "login"
+      }
+    ]
+  },
+  "createAccount": {
+    "step": "createAccount",
+    "action": "submit",
+    "redirectTo": "phoneVerifyInit",
+    "messages": [
+      {
+        "id": 1,
+        "text": "Email",
+        "type": "email"
+      },
+      {
+        "id": 2,
+        "text": "Password",
+        "type": "password"
+      },
+      {
+        "id": 3,
+        "text": "Repeat Password",
+        "type": "password"
+      }
+    ],
+    "options": []
+  },
+  "phoneVerifyInit": {
+    "step": "phoneVerifyInit",
+    "action": "submit",
+    "messages": [
+      {
+        "id": 1,
+        "text": "Let’s verify your mobile number",
+        "type": "text"
+      },
+      {
+        "id": 2,
+        "text": "Mobile Number",
+        "type": "phoneNumber"
+      }
+    ]
+  },
+  "phoneVerifyCheck": {
+    "step": "phoneVerifyCheck",
+    "action": "submit",
+    "messages": [
+      {
+        "id": 1,
+        "text": "Okay! An OTP has  to +X-XXX XXX XXX please enter the 6 digit number",
+        "type": "text"
+      },
+      {
+        "id": 2,
+        "text": "",
+        "type": "otp"
+      }
+    ],
+    "options": [
+      {
+        "id": 1,
+        "text": "Submit",
+        "redirectTo": "futureSignInOpt"
+      },
+      {
+        "id": 2,
+        "text": "Resend",
+        "redirectTo": "phoneVerifyCheck"
+      }
+    ]
+  },
+  "futureSignInOpt": {
+    "step": "futureSignInOpt",
+    "action": "submit",
+    "messages": [
+      {
+        "id": 1,
+        "text": "Great! \n Mobile number is verified",
+        "type": "text"
+      },
+      {
+        "id": 2,
+        "text": "In the future, \n how do you want to sign in? \n Choose one of the options:",
+        "type": "text"
+      }
+    ],
+    "options": [
+      {
+        "id": 1,
+        "text": "4 Digit Pin",
+        "redirectTo": "futureSignInOpt"
+      },
+      {
+        "id": 2,
+        "text": "Finger Print",
+        "redirectTo": "futureSignInOpt"
+      },
+      {
+        "id": 3,
+        "text": "Face Recognition",
+        "redirectTo": "futureSignInOpt"
+      }
+    ]
+  },
+  "registationNumber": {
+    "step": "registationNumber",
+    "action": "submit",
+    "messages": [
+      {
+        "id": 1,
+        "text": "Okay, Great! ",
+        "type": "text"
+      }
+    ],
+    "options": []
+  },
+  "inputFullName": {
+    "step": "inputFullName",
+    "action": "submit",
+    "outputToConsole": true,
+    "messages": [
+      {
+        "id": 1,
+        "text": "What is your Full Name?",
+        "type": "text"
+      }
+    ],
+    "options": [
+      {
+        "id": 1,
+        "text": "Submit"
+      }
+    ]
+  },
+  "inputNickName": {
+    "step": "inputNickName",
+    "action": "submit",
+    "messages": [
+      {
+        "id": 1,
+        "text": "How should we call you?",
+        "type": "text"
+      }
+    ],
+    "options": [
+      {
+        "id": 1,
+        "text": "Submit"
+      }
+    ]
+  },
+  "genderSelect": {
+    "step": "genderSelect",
+    "action": "submit",
+    "messages": [
+      {
+        "id": 1,
+        "text": "May I know your gender please?",
+        "type": "text"
+      }
+    ],
+    "options": [
+      {
+        "id": 1,
+        "text": "Male"
+      },
+      {
+        "id": 2,
+        "text": "Female"
+      },
+      {
+        "id": 3,
+        "text": "Others"
+      }
+    ]
+  },
+  "ethniticySelect": {
+    "step": "ethniticySelect",
+    "action": "submit",
+    "messages": [
+      {
+        "id": 1,
+        "text": "Select your ethnicity?",
+        "type": "text"
+      }
+    ],
+    "options": []
+  },
+  "inputDOB": {
+    "step": "inputDOB",
+    "action": "submit",
+    "messages": [
+      {
+        "id": 1,
+        "text": "What is your Date of Birth?",
+        "type": "text"
+      }
+    ],
+    "options": [
+      {
+        "id": 1,
+        "text": "",
+        "type": "date"
+      }
+    ]
+  },
+  "diabetesTypeSelect": {
+    "step": "diabetesTypeSelect",
+    "action": "submit",
+    "messages": [
+      {
+        "id": 1,
+        "text": "Please, choose the correct information regarding your diabetes status",
+        "type": "text"
+      },
+      {
+        "id": 2,
+        "text": "Which type of Diabtes do you have?",
+        "type": "text"
+      }
+    ],
+    "options": []
+  },
+  "diabetesConditionSelect": {
+    "step": "diabetesConditionSelect",
+    "action": "submit",
+    "messages": [
+      {
+        "id": 1,
+        "text": "Please indicate if you have any of the conditions:",
+        "type": "text"
+      }
+    ],
+    "options": []
+  },
+  "diabetesDiscoverySelect": {
+    "step": "diabetesDiscoverySelect",
+    "action": "submit",
+    "messages": [
+      {
+        "id": 1,
+        "text": "At what age did you learn from your doctor you had diabetes?",
+        "type": "text"
+      }
+    ],
+    "options": []
+  },
+  "studyGoalSelect": {
+    "step": "studyGoalSelect",
+    "action": "submit",
+    "messages": [
+      {
+        "id": 1,
+        "text": "Please, choose the correct information regarding your diabetes status",
+        "type": "text"
+      },
+      {
+        "id": 2,
+        "text": "What is your main goal to achieve through participating in this study? At the moment choose only one:",
+        "type": "text"
+      }
+    ],
+    "options": []
+  },
+  "improvementChangeSelect": {
+    "step": "improvementChangeSelect",
+    "action": "submit",
+    "messages": [
+      {
+        "id": 1,
+        "text": "What single change would improve your life right now?",
+        "type": "text"
+      }
+    ],
+    "options": []
+  },
+  "learningReadinessScale": {
+    "step": "learningReadinessScale",
+    "action": "submit",
+    "messages": [
+      {
+        "id": 1,
+        "text": "On a scale from 0 to 10, with 10 being very ready, how ready are you to learn more about diabetes self-management?",
+        "type": "scale"
+      }
+    ],
+    "options": []
+  },
+  "learningInterestScale": {
+    "step": "learningInterestScale",
+    "action": "submit",
+    "messages": [
+      {
+        "id": 1,
+        "text": "On a scale from 0 to 10, with 10 being very interested, how ready are you to improve your diabetes self-management?",
+        "type": "scale"
+      }
+    ],
+    "options": []
+  }
+}

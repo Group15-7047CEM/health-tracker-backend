@@ -1,0 +1,2238 @@
+{
+  "id": "2a7640b4-762f-4f15-a232-9a0159359820",
+  "name": "DEMOGRAPHIC (for BE)",
+  "description": null,
+  "measure": null,
+  "minTime": null,
+  "maxTime": null,
+  "links": null,
+  "year": null,
+  "reliability": null,
+  "useInStudy": null,
+  "source": null,
+  "scoringCriteria": null,
+  "notes": null,
+  "imageUrl": null,
+  "status": "draft",
+  "questionCount": 21,
+  "createdById": null,
+  "createdAt": "2020-08-14T08:50:20.883Z",
+  "updatedAt": "2020-08-14T12:20:59.655Z",
+  "deletedAt": null,
+  "questions": [
+    {
+      "id": "8539dd16-b025-4dd8-9381-df83e5670053",
+      "title": "Date of birth",
+      "questionCode": "dob",
+      "type": "date",
+      "description": null,
+      "required": false,
+      "position": 1,
+      "ref": "da01d491-cd0a-4caa-bdf4-e82206c83119",
+      "mainQuestionId": null,
+      "questionnaireId": "2a7640b4-762f-4f15-a232-9a0159359820",
+      "createdAt": "2020-08-14T12:20:59.398Z",
+      "updatedAt": "2020-08-14T12:20:59.398Z",
+      "deletedAt": null,
+      "attachment": null,
+      "properties": {
+        "responseCodes":[
+          {
+             "id":"ddef4e27-b856-4df9-8295-ccd6f8c86da9",
+             "minValue":null,
+             "maxValue":null,
+             "code":0,
+             "condition":null,
+             "questionId":"8539dd16-b025-4dd8-9381-df83e5670053",
+             "questionChoiceId":null
+          }
+       ]
+      }
+    },
+    {
+      "id": "cae11164-09a4-49f3-ba1f-74c11751e9d3",
+      "title": "Gender",
+      "questionCode": "gender",
+      "type": "dropdown",
+      "description": null,
+      "required": false,
+      "position": 2,
+      "ref": "162b487f-eafc-4ce8-9c7f-a465da113938",
+      "mainQuestionId": null,
+      "questionnaireId": "2a7640b4-762f-4f15-a232-9a0159359820",
+      "createdAt": "2020-08-14T12:20:59.399Z",
+      "updatedAt": "2020-08-14T12:20:59.399Z",
+      "deletedAt": null,
+      "attachment": null,
+      "properties": {
+        "choices": [
+          {
+            "id": "1917fcd7-8d1d-480e-8123-fd01c07a770c",
+            "label": "Female",
+            "position": 2,
+            "ref": "dce0fc8e-b08b-4bcd-8708-fd62dc6b9b83",
+            "questionId": "cae11164-09a4-49f3-ba1f-74c11751e9d3",
+            "createdAt": "2020-08-14T12:20:59.426Z",
+            "updatedAt": "2020-08-14T12:20:59.426Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "efd91262-f8f8-4961-87c3-1d4b23bee34c",
+            "label": "Male",
+            "position": 1,
+            "ref": "27d40be0-4738-4142-8ab7-58059748f6cf",
+            "questionId": "cae11164-09a4-49f3-ba1f-74c11751e9d3",
+            "createdAt": "2020-08-14T12:20:59.425Z",
+            "updatedAt": "2020-08-14T12:20:59.425Z",
+            "deletedAt": null,
+            "attachment": null
+          }
+        ],
+        "responseCodes": [
+          {
+            "id": "0efddc32-214e-495d-8977-c6745e54bcc3",
+            "minValue": null,
+            "maxValue": null,
+            "code": 1,
+            "condition": null,
+            "questionId": "cae11164-09a4-49f3-ba1f-74c11751e9d3",
+            "questionChoiceId": "efd91262-f8f8-4961-87c3-1d4b23bee34c",
+            "createdAt": "2020-08-14T12:20:59.531Z",
+            "updatedAt": "2020-08-14T12:20:59.531Z",
+            "deletedAt": null
+          },
+          {
+            "id": "cdb6265d-09db-4db6-9149-8d36b448d708",
+            "minValue": null,
+            "maxValue": null,
+            "code": 2,
+            "condition": null,
+            "questionId": "cae11164-09a4-49f3-ba1f-74c11751e9d3",
+            "questionChoiceId": "1917fcd7-8d1d-480e-8123-fd01c07a770c",
+            "createdAt": "2020-08-14T12:20:59.531Z",
+            "updatedAt": "2020-08-14T12:20:59.531Z",
+            "deletedAt": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "386a25ae-4877-402f-8c0f-56eed00996ba",
+      "title": "Ethnicity (If mixed please indicate all)",
+      "type": "dropdown",
+      "description": null,
+      "required": false,
+      "position": 3,
+      "ref": "1500d2ee-26e9-4779-a09b-a3c9d46d4dce",
+      "questionCode": "ethnicity",
+      "mainQuestionId": null,
+      "questionnaireId": "2a7640b4-762f-4f15-a232-9a0159359820",
+      "createdAt": "2020-08-14T12:20:59.399Z",
+      "updatedAt": "2020-08-14T12:20:59.399Z",
+      "deletedAt": null,
+      "attachment": null,
+      "properties": {
+        "choices": [
+          {
+            "id": "60051fe8-22e9-4fe3-9f0d-dfb4ce204eb0",
+            "label": "Other",
+            "position": 5,
+            "ref": "678b844a-7a27-4820-97ed-fc3e0001db99",
+            "questionId": "386a25ae-4877-402f-8c0f-56eed00996ba",
+            "createdAt": "2020-08-14T12:20:59.434Z",
+            "updatedAt": "2020-08-14T12:20:59.434Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "80f74080-74d2-465d-b37f-d6c4e878be59",
+            "label": "White European",
+            "position": 4,
+            "ref": "9b1dc21e-6782-4ad0-988c-d342b3aa6ef3",
+            "questionId": "386a25ae-4877-402f-8c0f-56eed00996ba",
+            "createdAt": "2020-08-14T12:20:59.434Z",
+            "updatedAt": "2020-08-14T12:20:59.434Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "fa77eb58-a39e-46b4-ae4f-8c43878773a6",
+            "label": "Indian",
+            "position": 3,
+            "ref": "74f6ecae-9eeb-4fa3-8e29-eadb91e9b8b3",
+            "questionId": "386a25ae-4877-402f-8c0f-56eed00996ba",
+            "createdAt": "2020-08-14T12:20:59.434Z",
+            "updatedAt": "2020-08-14T12:20:59.434Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "20e716b2-28d9-4364-a9a5-1875bb73f989",
+            "label": "Malay",
+            "position": 2,
+            "ref": "5d62bfc7-d8b1-4525-8bf2-534a2b642a9e",
+            "questionId": "386a25ae-4877-402f-8c0f-56eed00996ba",
+            "createdAt": "2020-08-14T12:20:59.434Z",
+            "updatedAt": "2020-08-14T12:20:59.434Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "2474cc8f-64a0-412e-b65f-ae3eb757296d",
+            "label": "Chinese",
+            "position": 1,
+            "ref": "d8647251-eef0-4342-a004-3915c1cea320",
+            "questionId": "386a25ae-4877-402f-8c0f-56eed00996ba",
+            "createdAt": "2020-08-14T12:20:59.434Z",
+            "updatedAt": "2020-08-14T12:20:59.434Z",
+            "deletedAt": null,
+            "attachment": null
+          }
+        ],
+        "responseCodes": [
+          {
+            "id": "c08af346-75dc-4281-9532-536580e94026",
+            "minValue": null,
+            "maxValue": null,
+            "code": 1,
+            "condition": null,
+            "questionId": "386a25ae-4877-402f-8c0f-56eed00996ba",
+            "questionChoiceId": "2474cc8f-64a0-412e-b65f-ae3eb757296d",
+            "createdAt": "2020-08-14T12:20:59.542Z",
+            "updatedAt": "2020-08-14T12:20:59.542Z",
+            "deletedAt": null
+          },
+          {
+            "id": "bdfb5173-81c2-42c7-99cf-e6ea8dbb35e3",
+            "minValue": null,
+            "maxValue": null,
+            "code": 2,
+            "condition": null,
+            "questionId": "386a25ae-4877-402f-8c0f-56eed00996ba",
+            "questionChoiceId": "20e716b2-28d9-4364-a9a5-1875bb73f989",
+            "createdAt": "2020-08-14T12:20:59.542Z",
+            "updatedAt": "2020-08-14T12:20:59.542Z",
+            "deletedAt": null
+          },
+          {
+            "id": "82f24c83-c9d4-46fd-a943-3bb20ff855c9",
+            "minValue": null,
+            "maxValue": null,
+            "code": 3,
+            "condition": null,
+            "questionId": "386a25ae-4877-402f-8c0f-56eed00996ba",
+            "questionChoiceId": "fa77eb58-a39e-46b4-ae4f-8c43878773a6",
+            "createdAt": "2020-08-14T12:20:59.542Z",
+            "updatedAt": "2020-08-14T12:20:59.542Z",
+            "deletedAt": null
+          },
+          {
+            "id": "5b28cdb9-9dc4-4954-b151-26641f018b0a",
+            "minValue": null,
+            "maxValue": null,
+            "code": 4,
+            "condition": null,
+            "questionId": "386a25ae-4877-402f-8c0f-56eed00996ba",
+            "questionChoiceId": "80f74080-74d2-465d-b37f-d6c4e878be59",
+            "createdAt": "2020-08-14T12:20:59.542Z",
+            "updatedAt": "2020-08-14T12:20:59.542Z",
+            "deletedAt": null
+          },
+          {
+            "id": "898dbd01-2a9a-4b50-a537-ebe1a4a7a1b8",
+            "minValue": null,
+            "maxValue": null,
+            "code": 5,
+            "condition": null,
+            "questionId": "386a25ae-4877-402f-8c0f-56eed00996ba",
+            "questionChoiceId": "60051fe8-22e9-4fe3-9f0d-dfb4ce204eb0",
+            "createdAt": "2020-08-14T12:20:59.542Z",
+            "updatedAt": "2020-08-14T12:20:59.542Z",
+            "deletedAt": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "2cebfdef-446c-4b62-a1a3-97d89489fa47",
+      "title": "Please specify your ethnicity",
+      "type": "short_text",
+      "description": null,
+      "required": false,
+      "position": 4,
+      "ref": "2c2993e5-db9e-4e32-99c0-07fb56dcb8c0",
+      "questionCode": "ethnicity",
+      "mainQuestionId": null,
+      "questionnaireId": "2a7640b4-762f-4f15-a232-9a0159359820",
+      "createdAt": "2020-08-14T12:20:59.399Z",
+      "updatedAt": "2020-08-14T12:20:59.399Z",
+      "deletedAt": null,
+      "attachment": null,
+      "properties": {
+        "responseCodes": [
+          {
+            "id": "da1c74f7-07ca-4b06-8728-63578ca0d28a",
+            "minValue": null,
+            "maxValue": null,
+            "code": 1,
+            "condition": null,
+            "questionId": "2cebfdef-446c-4b62-a1a3-97d89489fa47",
+            "questionChoiceId": null,
+            "createdAt": "2020-08-14T12:20:59.439Z",
+            "updatedAt": "2020-08-14T12:20:59.439Z",
+            "deletedAt": null
+          }
+        ],
+        "minRange": 1,
+        "maxRange": 255
+      }
+    },
+    {
+      "id": "8510c5cf-2f1f-4558-97ce-0979d0fc1f93",
+      "title": "What is your country of birth?",
+      "type": "dropdown",
+      "description": null,
+      "required": false,
+      "position": 5,
+      "ref": "013e86cb-bf02-4ea8-b12f-0b4b939d3737",
+      "questionCode": "country",
+      "mainQuestionId": null,
+      "questionnaireId": "2a7640b4-762f-4f15-a232-9a0159359820",
+      "createdAt": "2020-08-14T12:20:59.400Z",
+      "updatedAt": "2020-08-14T12:20:59.400Z",
+      "deletedAt": null,
+      "attachment": null,
+      "properties": {
+        "choices": [
+          {
+            "id": "2cc6bc6d-e3ac-4dc3-8e4e-ad6633715053",
+            "label": "Other",
+            "position": 5,
+            "ref": "01ddb542-e189-47c9-ac48-a279eed775c0",
+            "questionId": "8510c5cf-2f1f-4558-97ce-0979d0fc1f93",
+            "createdAt": "2020-08-14T12:20:59.446Z",
+            "updatedAt": "2020-08-14T12:20:59.446Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "facbef59-2229-4ed4-815e-d98d222d0cac",
+            "label": "Russia",
+            "position": 4,
+            "ref": "41a88072-45f9-4ec9-86f9-fa55298e5bf5",
+            "questionId": "8510c5cf-2f1f-4558-97ce-0979d0fc1f93",
+            "createdAt": "2020-08-14T12:20:59.445Z",
+            "updatedAt": "2020-08-14T12:20:59.445Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "ca1d8290-2d2b-43f7-8835-a2397719a3ac",
+            "label": "japan",
+            "position": 3,
+            "ref": "81a5827e-5377-4cae-be79-818ddfb9cc3d",
+            "questionId": "8510c5cf-2f1f-4558-97ce-0979d0fc1f93",
+            "createdAt": "2020-08-14T12:20:59.445Z",
+            "updatedAt": "2020-08-14T12:20:59.445Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "556ae05c-b5f1-4fc7-b9dd-7dedb1c889af",
+            "label": "china",
+            "position": 2,
+            "ref": "60561db7-2e86-4afb-902f-60da80234bc6",
+            "questionId": "8510c5cf-2f1f-4558-97ce-0979d0fc1f93",
+            "createdAt": "2020-08-14T12:20:59.445Z",
+            "updatedAt": "2020-08-14T12:20:59.445Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "a536588b-2220-44e1-97da-3508c97591ef",
+            "label": "India",
+            "position": 1,
+            "ref": "07efbf56-2bf6-481f-854b-2ea36e01ea9f",
+            "questionId": "8510c5cf-2f1f-4558-97ce-0979d0fc1f93",
+            "createdAt": "2020-08-14T12:20:59.445Z",
+            "updatedAt": "2020-08-14T12:20:59.445Z",
+            "deletedAt": null,
+            "attachment": null
+          }
+        ],
+        "responseCodes": [
+          {
+            "id": "52f35bb7-78cb-473a-93ce-a72d1adb1972",
+            "minValue": null,
+            "maxValue": null,
+            "code": 1,
+            "condition": null,
+            "questionId": "8510c5cf-2f1f-4558-97ce-0979d0fc1f93",
+            "questionChoiceId": "a536588b-2220-44e1-97da-3508c97591ef",
+            "createdAt": "2020-08-14T12:20:59.550Z",
+            "updatedAt": "2020-08-14T12:20:59.550Z",
+            "deletedAt": null
+          },
+          {
+            "id": "63b8ce3d-f0be-4088-8745-ac1bb0d6fd8a",
+            "minValue": null,
+            "maxValue": null,
+            "code": 2,
+            "condition": null,
+            "questionId": "8510c5cf-2f1f-4558-97ce-0979d0fc1f93",
+            "questionChoiceId": "556ae05c-b5f1-4fc7-b9dd-7dedb1c889af",
+            "createdAt": "2020-08-14T12:20:59.550Z",
+            "updatedAt": "2020-08-14T12:20:59.550Z",
+            "deletedAt": null
+          },
+          {
+            "id": "fa26f682-0631-4bf3-a932-c22180e6eaa0",
+            "minValue": null,
+            "maxValue": null,
+            "code": 3,
+            "condition": null,
+            "questionId": "8510c5cf-2f1f-4558-97ce-0979d0fc1f93",
+            "questionChoiceId": "ca1d8290-2d2b-43f7-8835-a2397719a3ac",
+            "createdAt": "2020-08-14T12:20:59.550Z",
+            "updatedAt": "2020-08-14T12:20:59.550Z",
+            "deletedAt": null
+          },
+          {
+            "id": "4a06acaa-62d8-44d5-811a-38f37f9d199d",
+            "minValue": null,
+            "maxValue": null,
+            "code": 4,
+            "condition": null,
+            "questionId": "8510c5cf-2f1f-4558-97ce-0979d0fc1f93",
+            "questionChoiceId": "facbef59-2229-4ed4-815e-d98d222d0cac",
+            "createdAt": "2020-08-14T12:20:59.550Z",
+            "updatedAt": "2020-08-14T12:20:59.550Z",
+            "deletedAt": null
+          },
+          {
+            "id": "3f8a62f3-207c-4a9f-95cd-395ad299ea7c",
+            "minValue": null,
+            "maxValue": null,
+            "code": 5,
+            "condition": null,
+            "questionId": "8510c5cf-2f1f-4558-97ce-0979d0fc1f93",
+            "questionChoiceId": "2cc6bc6d-e3ac-4dc3-8e4e-ad6633715053",
+            "createdAt": "2020-08-14T12:20:59.550Z",
+            "updatedAt": "2020-08-14T12:20:59.550Z",
+            "deletedAt": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "da99cc5c-833a-4267-be7a-0f29239f1c95",
+      "title": "Please specify your country of birth",
+      "type": "short_text",
+      "description": null,
+      "required": false,
+      "position": 6,
+      "ref": "2c50c93c-87d4-454f-bf91-d816e80c251c",
+      "questionCode": "country",
+      "mainQuestionId": null,
+      "questionnaireId": "2a7640b4-762f-4f15-a232-9a0159359820",
+      "createdAt": "2020-08-14T12:20:59.400Z",
+      "updatedAt": "2020-08-14T12:20:59.400Z",
+      "deletedAt": null,
+      "attachment": null,
+      "properties": {
+        "responseCodes": [
+          {
+            "id": "8c6c4426-b97c-49d9-82c4-4d7ebfff4fae",
+            "minValue": null,
+            "maxValue": null,
+            "code": 1,
+            "condition": null,
+            "questionId": "da99cc5c-833a-4267-be7a-0f29239f1c95",
+            "questionChoiceId": null,
+            "createdAt": "2020-08-14T12:20:59.453Z",
+            "updatedAt": "2020-08-14T12:20:59.453Z",
+            "deletedAt": null
+          }
+        ],
+        "minRange": 1,
+        "maxRange": 255
+      }
+    },
+    {
+      "id": "95cd57bc-d84f-4328-9284-1a0444b726e1",
+      "title": "What is your residential status in Singapore?",
+      "type": "multiple_choice",
+      "description": null,
+      "required": false,
+      "position": 7,
+      "ref": "62ce1e93-3fc1-496d-8c21-ba0336fe004a",
+      "questionCode": "residentialStatus",
+      "mainQuestionId": null,
+      "questionnaireId": "2a7640b4-762f-4f15-a232-9a0159359820",
+      "createdAt": "2020-08-14T12:20:59.400Z",
+      "updatedAt": "2020-08-14T12:20:59.400Z",
+      "deletedAt": null,
+      "attachment": null,
+      "properties": {
+        "choices": [
+          {
+            "id": "dfa7080e-2fe6-461e-bef4-d910cdec395a",
+            "label": "Other",
+            "position": 6,
+            "ref": "263aa21c-e131-49fd-9799-2a0cdce82ae2",
+            "questionId": "95cd57bc-d84f-4328-9284-1a0444b726e1",
+            "createdAt": "2020-08-14T12:20:59.455Z",
+            "updatedAt": "2020-08-14T12:20:59.455Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "d206d0c2-2cf1-4f77-baa9-674fa3e93576",
+            "label": "Work Permit / S pass",
+            "position": 5,
+            "ref": "0217aee2-2551-48d0-ab1d-7e72e16cc722",
+            "questionId": "95cd57bc-d84f-4328-9284-1a0444b726e1",
+            "createdAt": "2020-08-14T12:20:59.455Z",
+            "updatedAt": "2020-08-14T12:20:59.455Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "05cd71f8-be56-4e26-935e-f731180bb814",
+            "label": "Employment pass",
+            "position": 4,
+            "ref": "89e40dc6-22f8-40f7-9360-5ed983213252",
+            "questionId": "95cd57bc-d84f-4328-9284-1a0444b726e1",
+            "createdAt": "2020-08-14T12:20:59.454Z",
+            "updatedAt": "2020-08-14T12:20:59.454Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "9040ae4c-c119-4282-8f62-55ffc1e3b1a7",
+            "label": "Student pass",
+            "position": 3,
+            "ref": "22cb1c3e-b2a2-4c0a-b3b1-282e241c2f39",
+            "questionId": "95cd57bc-d84f-4328-9284-1a0444b726e1",
+            "createdAt": "2020-08-14T12:20:59.454Z",
+            "updatedAt": "2020-08-14T12:20:59.454Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "5b23059f-a7be-44fc-9bef-b41ab833fea0",
+            "label": "Permanent resident",
+            "position": 2,
+            "ref": "7176f706-dc26-400a-8358-d5a925674e18",
+            "questionId": "95cd57bc-d84f-4328-9284-1a0444b726e1",
+            "createdAt": "2020-08-14T12:20:59.454Z",
+            "updatedAt": "2020-08-14T12:20:59.454Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "35ae5e0e-8826-4f44-a63f-e14d43eb35fb",
+            "label": "Singapore citizen",
+            "position": 1,
+            "ref": "b51ed144-dc67-4b13-9e00-015838da4b66",
+            "questionId": "95cd57bc-d84f-4328-9284-1a0444b726e1",
+            "createdAt": "2020-08-14T12:20:59.454Z",
+            "updatedAt": "2020-08-14T12:20:59.454Z",
+            "deletedAt": null,
+            "attachment": null
+          }
+        ],
+        "responseCodes": [
+          {
+            "id": "92cf1c58-a618-4066-9136-2a900cde6e84",
+            "minValue": null,
+            "maxValue": null,
+            "code": 1,
+            "condition": null,
+            "questionId": "95cd57bc-d84f-4328-9284-1a0444b726e1",
+            "questionChoiceId": "35ae5e0e-8826-4f44-a63f-e14d43eb35fb",
+            "createdAt": "2020-08-14T12:20:59.560Z",
+            "updatedAt": "2020-08-14T12:20:59.560Z",
+            "deletedAt": null
+          },
+          {
+            "id": "e235e942-9e0c-44e2-b2db-216c168089b1",
+            "minValue": null,
+            "maxValue": null,
+            "code": 2,
+            "condition": null,
+            "questionId": "95cd57bc-d84f-4328-9284-1a0444b726e1",
+            "questionChoiceId": "5b23059f-a7be-44fc-9bef-b41ab833fea0",
+            "createdAt": "2020-08-14T12:20:59.560Z",
+            "updatedAt": "2020-08-14T12:20:59.560Z",
+            "deletedAt": null
+          },
+          {
+            "id": "63ded728-6c28-40bd-81c6-9d28fed7e3c5",
+            "minValue": null,
+            "maxValue": null,
+            "code": 3,
+            "condition": null,
+            "questionId": "95cd57bc-d84f-4328-9284-1a0444b726e1",
+            "questionChoiceId": "9040ae4c-c119-4282-8f62-55ffc1e3b1a7",
+            "createdAt": "2020-08-14T12:20:59.560Z",
+            "updatedAt": "2020-08-14T12:20:59.560Z",
+            "deletedAt": null
+          },
+          {
+            "id": "ad185d58-ebe5-4b77-9535-89e461951646",
+            "minValue": null,
+            "maxValue": null,
+            "code": 4,
+            "condition": null,
+            "questionId": "95cd57bc-d84f-4328-9284-1a0444b726e1",
+            "questionChoiceId": "05cd71f8-be56-4e26-935e-f731180bb814",
+            "createdAt": "2020-08-14T12:20:59.560Z",
+            "updatedAt": "2020-08-14T12:20:59.560Z",
+            "deletedAt": null
+          },
+          {
+            "id": "f29afb69-f241-46ee-aa65-9f16ac15de4c",
+            "minValue": null,
+            "maxValue": null,
+            "code": 5,
+            "condition": null,
+            "questionId": "95cd57bc-d84f-4328-9284-1a0444b726e1",
+            "questionChoiceId": "d206d0c2-2cf1-4f77-baa9-674fa3e93576",
+            "createdAt": "2020-08-14T12:20:59.560Z",
+            "updatedAt": "2020-08-14T12:20:59.560Z",
+            "deletedAt": null
+          },
+          {
+            "id": "b8416097-78c8-4d7f-bd06-bccbb794c754",
+            "minValue": null,
+            "maxValue": null,
+            "code": 6,
+            "condition": null,
+            "questionId": "95cd57bc-d84f-4328-9284-1a0444b726e1",
+            "questionChoiceId": "dfa7080e-2fe6-461e-bef4-d910cdec395a",
+            "createdAt": "2020-08-14T12:20:59.560Z",
+            "updatedAt": "2020-08-14T12:20:59.560Z",
+            "deletedAt": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "bab3cdfe-46ca-4147-a70e-da0032de0be5",
+      "title": "Please specify your residential status",
+      "type": "short_text",
+      "description": null,
+      "required": false,
+      "position": 8,
+      "ref": "03ce6dd9-a841-476f-918e-535d15720c7d",
+      "questionCode": "residentialStatus",
+      "mainQuestionId": null,
+      "questionnaireId": "2a7640b4-762f-4f15-a232-9a0159359820",
+      "createdAt": "2020-08-14T12:20:59.400Z",
+      "updatedAt": "2020-08-14T12:20:59.400Z",
+      "deletedAt": null,
+      "attachment": null,
+      "properties": {
+        "responseCodes": [
+          {
+            "id": "5872963d-4381-4469-81bd-5a9a20763166",
+            "minValue": null,
+            "maxValue": null,
+            "code": 1,
+            "condition": null,
+            "questionId": "bab3cdfe-46ca-4147-a70e-da0032de0be5",
+            "questionChoiceId": null,
+            "createdAt": "2020-08-14T12:20:59.460Z",
+            "updatedAt": "2020-08-14T12:20:59.460Z",
+            "deletedAt": null
+          }
+        ],
+        "minRange": 1,
+        "maxRange": 255
+      }
+    },
+    {
+      "id": "05a8b564-679f-464d-9ad3-b94745ee5316",
+      "title": "Current local address",
+      "type": "short_text",
+      "description": null,
+      "required": false,
+      "position": 9,
+      "ref": "0ae2e28e-2d1d-4271-9f37-2e72289aad5c",
+      "questionCode": "currentLocalAddress",
+      "mainQuestionId": null,
+      "questionnaireId": "2a7640b4-762f-4f15-a232-9a0159359820",
+      "createdAt": "2020-08-14T12:20:59.400Z",
+      "updatedAt": "2020-08-14T12:20:59.400Z",
+      "deletedAt": null,
+      "attachment": null,
+      "properties": {
+        "responseCodes": [
+          {
+            "id": "dc7191d8-eb07-4c34-8257-f5fd636fbc58",
+            "minValue": null,
+            "maxValue": null,
+            "code": 1,
+            "condition": null,
+            "questionId": "05a8b564-679f-464d-9ad3-b94745ee5316",
+            "questionChoiceId": null,
+            "createdAt": "2020-08-14T12:20:59.462Z",
+            "updatedAt": "2020-08-14T12:20:59.462Z",
+            "deletedAt": null
+          }
+        ],
+        "minRange": 1,
+        "maxRange": 255
+      }
+    },
+    {
+      "id": "9a8330e1-388a-4fc7-ae9a-369a127f1751",
+      "title": "In which district is your home address?",
+      "type": "dropdown",
+      "description": null,
+      "required": false,
+      "position": 10,
+      "ref": "69dc9264-5a38-4828-b117-9f1b75d086cd",
+      "questionCode": "district",
+      "mainQuestionId": null,
+      "questionnaireId": "2a7640b4-762f-4f15-a232-9a0159359820",
+      "createdAt": "2020-08-14T12:20:59.400Z",
+      "updatedAt": "2020-08-14T12:20:59.400Z",
+      "deletedAt": null,
+      "attachment": null,
+      "properties": {
+        "choices": [
+          {
+            "id": "23ec5162-5440-4474-9842-b0de300dbd36",
+            "label": "Chinatown",
+            "position": 5,
+            "ref": "479aa97f-aa27-4c32-8eec-c9f99a2de152",
+            "questionId": "9a8330e1-388a-4fc7-ae9a-369a127f1751",
+            "createdAt": "2020-08-14T12:20:59.466Z",
+            "updatedAt": "2020-08-14T12:20:59.466Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "adc5d96a-d6de-43fb-9f2d-bd2d8fc58420",
+            "label": "Tanjong Pagar",
+            "position": 4,
+            "ref": "895e4f6a-2640-4442-a31e-1eab07dcb04f",
+            "questionId": "9a8330e1-388a-4fc7-ae9a-369a127f1751",
+            "createdAt": "2020-08-14T12:20:59.465Z",
+            "updatedAt": "2020-08-14T12:20:59.465Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "117ba569-d81c-4e89-aa04-0de0d46decac",
+            "label": "Cecil",
+            "position": 3,
+            "ref": "2c190a84-b02a-45c0-8403-34fcc1748453",
+            "questionId": "9a8330e1-388a-4fc7-ae9a-369a127f1751",
+            "createdAt": "2020-08-14T12:20:59.465Z",
+            "updatedAt": "2020-08-14T12:20:59.465Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "1989a4d6-c41f-4460-9f56-595c4eb40dbf",
+            "label": "Marina",
+            "position": 2,
+            "ref": "53248a2e-15ed-49ef-b432-0786b7ed2fe7",
+            "questionId": "9a8330e1-388a-4fc7-ae9a-369a127f1751",
+            "createdAt": "2020-08-14T12:20:59.465Z",
+            "updatedAt": "2020-08-14T12:20:59.465Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "ac52f54c-89e0-4f8e-9d96-de14fbb6da38",
+            "label": "Raffles Place",
+            "position": 1,
+            "ref": "c4099a97-db71-4082-a71f-1eeb2d4ff982",
+            "questionId": "9a8330e1-388a-4fc7-ae9a-369a127f1751",
+            "createdAt": "2020-08-14T12:20:59.465Z",
+            "updatedAt": "2020-08-14T12:20:59.465Z",
+            "deletedAt": null,
+            "attachment": null
+          }
+        ],
+        "responseCodes": [
+          {
+            "id": "9513d61c-dfdc-4b11-af59-2c24aeeb3e23",
+            "minValue": null,
+            "maxValue": null,
+            "code": 1,
+            "condition": null,
+            "questionId": "9a8330e1-388a-4fc7-ae9a-369a127f1751",
+            "questionChoiceId": "ac52f54c-89e0-4f8e-9d96-de14fbb6da38",
+            "createdAt": "2020-08-14T12:20:59.571Z",
+            "updatedAt": "2020-08-14T12:20:59.571Z",
+            "deletedAt": null
+          },
+          {
+            "id": "2d65be82-d413-4c4e-bdd6-c1f05baef9e6",
+            "minValue": null,
+            "maxValue": null,
+            "code": 2,
+            "condition": null,
+            "questionId": "9a8330e1-388a-4fc7-ae9a-369a127f1751",
+            "questionChoiceId": "1989a4d6-c41f-4460-9f56-595c4eb40dbf",
+            "createdAt": "2020-08-14T12:20:59.571Z",
+            "updatedAt": "2020-08-14T12:20:59.571Z",
+            "deletedAt": null
+          },
+          {
+            "id": "109c239a-93e4-4d3a-ae0d-9ebd67678936",
+            "minValue": null,
+            "maxValue": null,
+            "code": 3,
+            "condition": null,
+            "questionId": "9a8330e1-388a-4fc7-ae9a-369a127f1751",
+            "questionChoiceId": "117ba569-d81c-4e89-aa04-0de0d46decac",
+            "createdAt": "2020-08-14T12:20:59.571Z",
+            "updatedAt": "2020-08-14T12:20:59.571Z",
+            "deletedAt": null
+          },
+          {
+            "id": "c84d98c2-eb0d-4ea1-8b49-686827a1d7b3",
+            "minValue": null,
+            "maxValue": null,
+            "code": 4,
+            "condition": null,
+            "questionId": "9a8330e1-388a-4fc7-ae9a-369a127f1751",
+            "questionChoiceId": "adc5d96a-d6de-43fb-9f2d-bd2d8fc58420",
+            "createdAt": "2020-08-14T12:20:59.571Z",
+            "updatedAt": "2020-08-14T12:20:59.571Z",
+            "deletedAt": null
+          },
+          {
+            "id": "50c1e9fb-6c51-446f-a055-b546d1c6895b",
+            "minValue": null,
+            "maxValue": null,
+            "code": 5,
+            "condition": null,
+            "questionId": "9a8330e1-388a-4fc7-ae9a-369a127f1751",
+            "questionChoiceId": "23ec5162-5440-4474-9842-b0de300dbd36",
+            "createdAt": "2020-08-14T12:20:59.571Z",
+            "updatedAt": "2020-08-14T12:20:59.571Z",
+            "deletedAt": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "98138c26-7d60-493a-8668-3305d9bf8572",
+      "title": "What will your address be during semester time?",
+      "type": "multiple_choice",
+      "description": null,
+      "required": false,
+      "position": 11,
+      "ref": "65c53e77-1c34-492d-a837-ce69562b78c4",
+      "questionCode": "addressDuringSem",
+      "mainQuestionId": null,
+      "questionnaireId": "2a7640b4-762f-4f15-a232-9a0159359820",
+      "createdAt": "2020-08-14T12:20:59.401Z",
+      "updatedAt": "2020-08-14T12:20:59.401Z",
+      "deletedAt": null,
+      "attachment": null,
+      "properties": {
+        "choices": [
+          {
+            "id": "a06c8910-6cb1-4126-8fc6-6692a0c56a99",
+            "label": "Don't know yet",
+            "position": 4,
+            "ref": "609eb0d9-4d98-407b-831b-b63876c86152",
+            "questionId": "98138c26-7d60-493a-8668-3305d9bf8572",
+            "createdAt": "2020-08-14T12:20:59.471Z",
+            "updatedAt": "2020-08-14T12:20:59.471Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "1da34f6d-6f54-4714-b311-a86086ecd5c9",
+            "label": "Off campus residence different from home address",
+            "position": 3,
+            "ref": "73f4583d-0133-4408-ae33-d5376134b42d",
+            "questionId": "98138c26-7d60-493a-8668-3305d9bf8572",
+            "createdAt": "2020-08-14T12:20:59.471Z",
+            "updatedAt": "2020-08-14T12:20:59.471Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "4f7e81a8-5a77-4092-af90-5b89445cd44a",
+            "label": "On campus residence",
+            "position": 2,
+            "ref": "d961b7cb-5b54-44f8-9ec8-3d17f306be0e",
+            "questionId": "98138c26-7d60-493a-8668-3305d9bf8572",
+            "createdAt": "2020-08-14T12:20:59.471Z",
+            "updatedAt": "2020-08-14T12:20:59.471Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "8a7665c1-7559-4ee9-b7a4-cd51af8724f4",
+            "label": "Same as home address",
+            "position": 1,
+            "ref": "28fc24aa-113b-4b63-baba-856147e1e5f1",
+            "questionId": "98138c26-7d60-493a-8668-3305d9bf8572",
+            "createdAt": "2020-08-14T12:20:59.470Z",
+            "updatedAt": "2020-08-14T12:20:59.470Z",
+            "deletedAt": null,
+            "attachment": null
+          }
+        ],
+        "responseCodes": [
+          {
+            "id": "7c0c4940-9bfa-4758-9fd6-cefea69c3c30",
+            "minValue": null,
+            "maxValue": null,
+            "code": 1,
+            "condition": null,
+            "questionId": "98138c26-7d60-493a-8668-3305d9bf8572",
+            "questionChoiceId": "8a7665c1-7559-4ee9-b7a4-cd51af8724f4",
+            "createdAt": "2020-08-14T12:20:59.577Z",
+            "updatedAt": "2020-08-14T12:20:59.577Z",
+            "deletedAt": null
+          },
+          {
+            "id": "72b78e81-4418-4bb8-9306-a760275e12b8",
+            "minValue": null,
+            "maxValue": null,
+            "code": 2,
+            "condition": null,
+            "questionId": "98138c26-7d60-493a-8668-3305d9bf8572",
+            "questionChoiceId": "4f7e81a8-5a77-4092-af90-5b89445cd44a",
+            "createdAt": "2020-08-14T12:20:59.577Z",
+            "updatedAt": "2020-08-14T12:20:59.577Z",
+            "deletedAt": null
+          },
+          {
+            "id": "8ebcaefe-516e-46ce-849e-d0c3ae014114",
+            "minValue": null,
+            "maxValue": null,
+            "code": 3,
+            "condition": null,
+            "questionId": "98138c26-7d60-493a-8668-3305d9bf8572",
+            "questionChoiceId": "1da34f6d-6f54-4714-b311-a86086ecd5c9",
+            "createdAt": "2020-08-14T12:20:59.577Z",
+            "updatedAt": "2020-08-14T12:20:59.577Z",
+            "deletedAt": null
+          },
+          {
+            "id": "a204f6fc-edcc-46b9-8f7a-5e44077b32ba",
+            "minValue": null,
+            "maxValue": null,
+            "code": 4,
+            "condition": null,
+            "questionId": "98138c26-7d60-493a-8668-3305d9bf8572",
+            "questionChoiceId": "a06c8910-6cb1-4126-8fc6-6692a0c56a99",
+            "createdAt": "2020-08-14T12:20:59.577Z",
+            "updatedAt": "2020-08-14T12:20:59.577Z",
+            "deletedAt": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "f891e620-92c6-4a39-aebb-499b55041783",
+      "title": "Where will you be living on-campus?",
+      "type": "multiple_choice",
+      "description": null,
+      "required": false,
+      "position": 12,
+      "ref": "422d5ee5-cfa8-4e7c-8a7c-9884fc2b34e9",
+      "questionCode": "onCampusAddress",
+      "mainQuestionId": null,
+      "questionnaireId": "2a7640b4-762f-4f15-a232-9a0159359820",
+      "createdAt": "2020-08-14T12:20:59.401Z",
+      "updatedAt": "2020-08-14T12:20:59.401Z",
+      "deletedAt": null,
+      "attachment": null,
+      "properties": {
+        "choices": [
+          {
+            "id": "122143e7-f651-4c10-b8db-3f03303f037b",
+            "label": "Hall 6",
+            "position": 7,
+            "ref": "c64ff8da-05a7-4b2d-881a-4ebb21596325",
+            "questionId": "f891e620-92c6-4a39-aebb-499b55041783",
+            "createdAt": "2020-08-14T12:20:59.477Z",
+            "updatedAt": "2020-08-14T12:20:59.477Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "140b113b-88b1-4569-8745-74721e2aae85",
+            "label": "Hall 5",
+            "position": 6,
+            "ref": "cd4fcf1f-b5c0-4218-b0ff-9d8b039b1157",
+            "questionId": "f891e620-92c6-4a39-aebb-499b55041783",
+            "createdAt": "2020-08-14T12:20:59.476Z",
+            "updatedAt": "2020-08-14T12:20:59.476Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "7865fba7-fcfc-4c9a-b19d-115953908fef",
+            "label": "Hall 4",
+            "position": 5,
+            "ref": "a1fdb204-6803-4136-97cb-f89bdafd7325",
+            "questionId": "f891e620-92c6-4a39-aebb-499b55041783",
+            "createdAt": "2020-08-14T12:20:59.476Z",
+            "updatedAt": "2020-08-14T12:20:59.476Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "d1431042-fe5c-4085-9ac6-65ea45567511",
+            "label": "Hall 3",
+            "position": 4,
+            "ref": "009a0797-6390-4e49-9d92-eb4feea78ec8",
+            "questionId": "f891e620-92c6-4a39-aebb-499b55041783",
+            "createdAt": "2020-08-14T12:20:59.476Z",
+            "updatedAt": "2020-08-14T12:20:59.476Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "0021ebb0-adb6-4ef6-b118-65a38333f33e",
+            "label": "Hall 2",
+            "position": 3,
+            "ref": "9be01d06-9055-4eec-b883-c64e2a5a3254",
+            "questionId": "f891e620-92c6-4a39-aebb-499b55041783",
+            "createdAt": "2020-08-14T12:20:59.475Z",
+            "updatedAt": "2020-08-14T12:20:59.475Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "f6620139-0c75-4d41-8675-dd3dccfe59d6",
+            "label": "Hall 1",
+            "position": 2,
+            "ref": "d3e4e484-867b-4bf8-a5be-36ce79a8cfd3",
+            "questionId": "f891e620-92c6-4a39-aebb-499b55041783",
+            "createdAt": "2020-08-14T12:20:59.475Z",
+            "updatedAt": "2020-08-14T12:20:59.475Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "b207c990-d9da-4e6b-8614-4b29e8bb7c3a",
+            "label": "Unsure",
+            "position": 1,
+            "ref": "533dfddb-2306-4ddd-a923-25cfd739e67e",
+            "questionId": "f891e620-92c6-4a39-aebb-499b55041783",
+            "createdAt": "2020-08-14T12:20:59.475Z",
+            "updatedAt": "2020-08-14T12:20:59.475Z",
+            "deletedAt": null,
+            "attachment": null
+          }
+        ],
+        "responseCodes": [
+          {
+            "id": "babe7ef5-f85d-4e0d-be38-12d70f76d103",
+            "minValue": null,
+            "maxValue": null,
+            "code": 1,
+            "condition": null,
+            "questionId": "f891e620-92c6-4a39-aebb-499b55041783",
+            "questionChoiceId": "b207c990-d9da-4e6b-8614-4b29e8bb7c3a",
+            "createdAt": "2020-08-14T12:20:59.587Z",
+            "updatedAt": "2020-08-14T12:20:59.587Z",
+            "deletedAt": null
+          },
+          {
+            "id": "cd32842d-2dae-44d6-b0e1-500e47ad78cc",
+            "minValue": null,
+            "maxValue": null,
+            "code": 2,
+            "condition": null,
+            "questionId": "f891e620-92c6-4a39-aebb-499b55041783",
+            "questionChoiceId": "f6620139-0c75-4d41-8675-dd3dccfe59d6",
+            "createdAt": "2020-08-14T12:20:59.587Z",
+            "updatedAt": "2020-08-14T12:20:59.587Z",
+            "deletedAt": null
+          },
+          {
+            "id": "45e82165-ab19-4e2c-bfc8-7db2ca54cc61",
+            "minValue": null,
+            "maxValue": null,
+            "code": 3,
+            "condition": null,
+            "questionId": "f891e620-92c6-4a39-aebb-499b55041783",
+            "questionChoiceId": "0021ebb0-adb6-4ef6-b118-65a38333f33e",
+            "createdAt": "2020-08-14T12:20:59.587Z",
+            "updatedAt": "2020-08-14T12:20:59.587Z",
+            "deletedAt": null
+          },
+          {
+            "id": "2f0e4d5c-5491-4ed4-8912-afc9d2c7858c",
+            "minValue": null,
+            "maxValue": null,
+            "code": 4,
+            "condition": null,
+            "questionId": "f891e620-92c6-4a39-aebb-499b55041783",
+            "questionChoiceId": "d1431042-fe5c-4085-9ac6-65ea45567511",
+            "createdAt": "2020-08-14T12:20:59.587Z",
+            "updatedAt": "2020-08-14T12:20:59.587Z",
+            "deletedAt": null
+          },
+          {
+            "id": "581a6724-516d-457c-b5cc-602368b77f4a",
+            "minValue": null,
+            "maxValue": null,
+            "code": 5,
+            "condition": null,
+            "questionId": "f891e620-92c6-4a39-aebb-499b55041783",
+            "questionChoiceId": "7865fba7-fcfc-4c9a-b19d-115953908fef",
+            "createdAt": "2020-08-14T12:20:59.587Z",
+            "updatedAt": "2020-08-14T12:20:59.587Z",
+            "deletedAt": null
+          },
+          {
+            "id": "dad5fb38-5c20-40d1-b2b9-a0f7b99b9b9d",
+            "minValue": null,
+            "maxValue": null,
+            "code": 6,
+            "condition": null,
+            "questionId": "f891e620-92c6-4a39-aebb-499b55041783",
+            "questionChoiceId": "140b113b-88b1-4569-8745-74721e2aae85",
+            "createdAt": "2020-08-14T12:20:59.587Z",
+            "updatedAt": "2020-08-14T12:20:59.587Z",
+            "deletedAt": null
+          },
+          {
+            "id": "c722fe65-787e-4cfc-b3b7-8ee001a6e2e5",
+            "minValue": null,
+            "maxValue": null,
+            "code": 7,
+            "condition": null,
+            "questionId": "f891e620-92c6-4a39-aebb-499b55041783",
+            "questionChoiceId": "122143e7-f651-4c10-b8db-3f03303f037b",
+            "createdAt": "2020-08-14T12:20:59.587Z",
+            "updatedAt": "2020-08-14T12:20:59.587Z",
+            "deletedAt": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "11355e0b-58e1-4679-bc39-0379b3189599",
+      "title": "What is your off campus address?",
+      "type": "short_text",
+      "description": null,
+      "required": false,
+      "position": 13,
+      "ref": "f1d9d4f1-f214-4e76-b0a4-483e64c606b2",
+      "questionCode": "offCampusAddress",
+      "mainQuestionId": null,
+      "questionnaireId": "2a7640b4-762f-4f15-a232-9a0159359820",
+      "createdAt": "2020-08-14T12:20:59.401Z",
+      "updatedAt": "2020-08-14T12:20:59.401Z",
+      "deletedAt": null,
+      "attachment": null,
+      "properties": {
+        "responseCodes": [
+          {
+            "id": "5722b533-5200-4eb1-b4f3-1a6dbfc7a2ad",
+            "minValue": null,
+            "maxValue": null,
+            "code": 1,
+            "condition": null,
+            "questionId": "11355e0b-58e1-4679-bc39-0379b3189599",
+            "questionChoiceId": null,
+            "createdAt": "2020-08-14T12:20:59.483Z",
+            "updatedAt": "2020-08-14T12:20:59.483Z",
+            "deletedAt": null
+          }
+        ],
+        "minRange": 1,
+        "maxRange": 255
+      }
+    },
+    {
+      "id": "6a8c89a2-0db1-4ee0-a3e9-ddccf642be8f",
+      "title": "Which school are you enrolling into?",
+      "type": "dropdown",
+      "description": null,
+      "required": false,
+      "position": 14,
+      "ref": "19b733db-9721-43be-943d-ef2bec6fcb2a",
+      "questionCode": "school",
+      "mainQuestionId": null,
+      "questionnaireId": "2a7640b4-762f-4f15-a232-9a0159359820",
+      "createdAt": "2020-08-14T12:20:59.401Z",
+      "updatedAt": "2020-08-14T12:20:59.401Z",
+      "deletedAt": null,
+      "attachment": null,
+      "properties": {
+        "choices": [
+          {
+            "id": "f4f840ce-c865-4ac4-99ee-e9175e6110a8",
+            "label": "S. Rajaratnam School of International Studies",
+            "position": 6,
+            "ref": "a02ee28b-5f4d-4cc3-9a46-62ec3e4c71ae",
+            "questionId": "6a8c89a2-0db1-4ee0-a3e9-ddccf642be8f",
+            "createdAt": "2020-08-14T12:20:59.494Z",
+            "updatedAt": "2020-08-14T12:20:59.494Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "5fba90a3-4035-48c2-8b93-2f5b04a9350e",
+            "label": "Physical Education and Sports Science",
+            "position": 5,
+            "ref": "4503f68c-43e7-430b-80f3-a0033276adfa",
+            "questionId": "6a8c89a2-0db1-4ee0-a3e9-ddccf642be8f",
+            "createdAt": "2020-08-14T12:20:59.494Z",
+            "updatedAt": "2020-08-14T12:20:59.494Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "915b8133-1a1d-464a-ac27-d1487bfbbdae",
+            "label": "National Institute of Education",
+            "position": 4,
+            "ref": "bb179883-a169-462f-ae2c-07fe6775e66b",
+            "questionId": "6a8c89a2-0db1-4ee0-a3e9-ddccf642be8f",
+            "createdAt": "2020-08-14T12:20:59.494Z",
+            "updatedAt": "2020-08-14T12:20:59.494Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "b3858294-d277-404f-ad75-6dc93ae1bcd8",
+            "label": "Nanyang Business School (NBS)",
+            "position": 3,
+            "ref": "2e254f18-22da-44cf-a0db-4aed43f1cf04",
+            "questionId": "6a8c89a2-0db1-4ee0-a3e9-ddccf642be8f",
+            "createdAt": "2020-08-14T12:20:59.494Z",
+            "updatedAt": "2020-08-14T12:20:59.494Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "071395d4-136a-4b20-aa0e-6ab7f50d936b",
+            "label": "Lee Kong Chian School of Medicine",
+            "position": 2,
+            "ref": "93637400-6f3b-497d-8bfb-b9fcc6939e49",
+            "questionId": "6a8c89a2-0db1-4ee0-a3e9-ddccf642be8f",
+            "createdAt": "2020-08-14T12:20:59.494Z",
+            "updatedAt": "2020-08-14T12:20:59.494Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "7fed18a6-9b3c-4d6b-8746-36347921918f",
+            "label": "Asian School of the Environment",
+            "position": 1,
+            "ref": "8a59629c-4da0-4437-9da3-20f901a500dc",
+            "questionId": "6a8c89a2-0db1-4ee0-a3e9-ddccf642be8f",
+            "createdAt": "2020-08-14T12:20:59.485Z",
+            "updatedAt": "2020-08-14T12:20:59.485Z",
+            "deletedAt": null,
+            "attachment": null
+          }
+        ],
+        "responseCodes": [
+          {
+            "id": "7c6e6557-7555-4367-aa8e-c6b124d5d1d2",
+            "minValue": null,
+            "maxValue": null,
+            "code": 1,
+            "condition": null,
+            "questionId": "6a8c89a2-0db1-4ee0-a3e9-ddccf642be8f",
+            "questionChoiceId": "7fed18a6-9b3c-4d6b-8746-36347921918f",
+            "createdAt": "2020-08-14T12:20:59.596Z",
+            "updatedAt": "2020-08-14T12:20:59.596Z",
+            "deletedAt": null
+          },
+          {
+            "id": "73c6cafc-d1e6-41c9-9763-32faee752188",
+            "minValue": null,
+            "maxValue": null,
+            "code": 2,
+            "condition": null,
+            "questionId": "6a8c89a2-0db1-4ee0-a3e9-ddccf642be8f",
+            "questionChoiceId": "071395d4-136a-4b20-aa0e-6ab7f50d936b",
+            "createdAt": "2020-08-14T12:20:59.596Z",
+            "updatedAt": "2020-08-14T12:20:59.596Z",
+            "deletedAt": null
+          },
+          {
+            "id": "3782cd97-ce70-4189-8051-2be9d0232e54",
+            "minValue": null,
+            "maxValue": null,
+            "code": 3,
+            "condition": null,
+            "questionId": "6a8c89a2-0db1-4ee0-a3e9-ddccf642be8f",
+            "questionChoiceId": "b3858294-d277-404f-ad75-6dc93ae1bcd8",
+            "createdAt": "2020-08-14T12:20:59.596Z",
+            "updatedAt": "2020-08-14T12:20:59.596Z",
+            "deletedAt": null
+          },
+          {
+            "id": "66a3f359-de48-425f-b363-609c277f5c2e",
+            "minValue": null,
+            "maxValue": null,
+            "code": 4,
+            "condition": null,
+            "questionId": "6a8c89a2-0db1-4ee0-a3e9-ddccf642be8f",
+            "questionChoiceId": "915b8133-1a1d-464a-ac27-d1487bfbbdae",
+            "createdAt": "2020-08-14T12:20:59.596Z",
+            "updatedAt": "2020-08-14T12:20:59.596Z",
+            "deletedAt": null
+          },
+          {
+            "id": "4e71ba73-3841-4138-a184-52879cfd2a77",
+            "minValue": null,
+            "maxValue": null,
+            "code": 5,
+            "condition": null,
+            "questionId": "6a8c89a2-0db1-4ee0-a3e9-ddccf642be8f",
+            "questionChoiceId": "5fba90a3-4035-48c2-8b93-2f5b04a9350e",
+            "createdAt": "2020-08-14T12:20:59.596Z",
+            "updatedAt": "2020-08-14T12:20:59.596Z",
+            "deletedAt": null
+          },
+          {
+            "id": "99336cd6-8aba-430f-8af8-423f63fc05e7",
+            "minValue": null,
+            "maxValue": null,
+            "code": 6,
+            "condition": null,
+            "questionId": "6a8c89a2-0db1-4ee0-a3e9-ddccf642be8f",
+            "questionChoiceId": "f4f840ce-c865-4ac4-99ee-e9175e6110a8",
+            "createdAt": "2020-08-14T12:20:59.596Z",
+            "updatedAt": "2020-08-14T12:20:59.596Z",
+            "deletedAt": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "4887add9-0359-4da5-bdc9-0a1d01c637ef",
+      "title": "What is the course you are accepted into?",
+      "type": "multiple_choice",
+      "description": null,
+      "required": false,
+      "position": 15,
+      "ref": "c9026d7d-d572-452e-8ffe-19c7148e69f4",
+      "questionCode": "course",
+      "mainQuestionId": null,
+      "questionnaireId": "2a7640b4-762f-4f15-a232-9a0159359820",
+      "createdAt": "2020-08-14T12:20:59.401Z",
+      "updatedAt": "2020-08-14T12:20:59.401Z",
+      "deletedAt": null,
+      "attachment": null,
+      "properties": {
+        "choices": [
+          {
+            "id": "c4648147-4513-4c1a-baab-73d26abc8c41",
+            "label": "Other, please specify",
+            "position": 2,
+            "ref": "32ba14a8-8a4a-40ea-a72f-51d064d251ee",
+            "questionId": "4887add9-0359-4da5-bdc9-0a1d01c637ef",
+            "createdAt": "2020-08-14T12:20:59.502Z",
+            "updatedAt": "2020-08-14T12:20:59.502Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "19143718-03d4-4d36-8608-19640bf01895",
+            "label": "Medicine",
+            "position": 1,
+            "ref": "4a311e21-04e1-418d-84d0-876522cb5d12",
+            "questionId": "4887add9-0359-4da5-bdc9-0a1d01c637ef",
+            "createdAt": "2020-08-14T12:20:59.502Z",
+            "updatedAt": "2020-08-14T12:20:59.502Z",
+            "deletedAt": null,
+            "attachment": null
+          }
+        ],
+        "responseCodes": [
+          {
+            "id": "31f8e714-2f00-44a1-9ed3-1b94633c006b",
+            "minValue": null,
+            "maxValue": null,
+            "code": 1,
+            "condition": null,
+            "questionId": "4887add9-0359-4da5-bdc9-0a1d01c637ef",
+            "questionChoiceId": "19143718-03d4-4d36-8608-19640bf01895",
+            "createdAt": "2020-08-14T12:20:59.600Z",
+            "updatedAt": "2020-08-14T12:20:59.600Z",
+            "deletedAt": null
+          },
+          {
+            "id": "befab5d2-405e-469d-9967-ee5a97aebe9f",
+            "minValue": null,
+            "maxValue": null,
+            "code": 2,
+            "condition": null,
+            "questionId": "4887add9-0359-4da5-bdc9-0a1d01c637ef",
+            "questionChoiceId": "c4648147-4513-4c1a-baab-73d26abc8c41",
+            "createdAt": "2020-08-14T12:20:59.600Z",
+            "updatedAt": "2020-08-14T12:20:59.600Z",
+            "deletedAt": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "dc9aadff-a859-44ff-9daf-f051c45117e1",
+      "title": "What is the course you are accepted into?",
+      "type": "multiple_choice",
+      "description": null,
+      "required": false,
+      "position": 16,
+      "ref": "3ef72c41-1714-4d5e-82b6-35188434f0e9",
+      "questionCode": "course",
+      "mainQuestionId": null,
+      "questionnaireId": "2a7640b4-762f-4f15-a232-9a0159359820",
+      "createdAt": "2020-08-14T12:20:59.401Z",
+      "updatedAt": "2020-08-14T12:20:59.401Z",
+      "deletedAt": null,
+      "attachment": null,
+      "properties": {
+        "choices": [
+          {
+            "id": "1cc45a9c-9c96-432b-83b3-0159f43f2196",
+            "label": "Other, please specify",
+            "position": 4,
+            "ref": "4d8e4755-a9f2-4e09-9d8d-fc521c0f5272",
+            "questionId": "dc9aadff-a859-44ff-9daf-f051c45117e1",
+            "createdAt": "2020-08-14T12:20:59.507Z",
+            "updatedAt": "2020-08-14T12:20:59.507Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "c1fdf441-62b7-4a75-838b-164a7740b620",
+            "label": "Accountancy and Business",
+            "position": 3,
+            "ref": "6ea42682-11ce-45df-bdd2-82b78c855e45",
+            "questionId": "dc9aadff-a859-44ff-9daf-f051c45117e1",
+            "createdAt": "2020-08-14T12:20:59.507Z",
+            "updatedAt": "2020-08-14T12:20:59.507Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "3be1c6de-3f78-4112-968e-a20adc8378d9",
+            "label": "Business",
+            "position": 2,
+            "ref": "8cd95e6f-5780-4b56-82fb-b263380c2b4e",
+            "questionId": "dc9aadff-a859-44ff-9daf-f051c45117e1",
+            "createdAt": "2020-08-14T12:20:59.507Z",
+            "updatedAt": "2020-08-14T12:20:59.507Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "85471356-24dc-491d-b1b3-6e886da6db0e",
+            "label": "Accountancy",
+            "position": 1,
+            "ref": "308db16f-c17f-41fb-a500-4af6a8116d6d",
+            "questionId": "dc9aadff-a859-44ff-9daf-f051c45117e1",
+            "createdAt": "2020-08-14T12:20:59.507Z",
+            "updatedAt": "2020-08-14T12:20:59.507Z",
+            "deletedAt": null,
+            "attachment": null
+          }
+        ],
+        "responseCodes": [
+          {
+            "id": "6791a835-5975-433b-8e2a-a1bb4a34b1b4",
+            "minValue": null,
+            "maxValue": null,
+            "code": 1,
+            "condition": null,
+            "questionId": "dc9aadff-a859-44ff-9daf-f051c45117e1",
+            "questionChoiceId": "85471356-24dc-491d-b1b3-6e886da6db0e",
+            "createdAt": "2020-08-14T12:20:59.604Z",
+            "updatedAt": "2020-08-14T12:20:59.604Z",
+            "deletedAt": null
+          },
+          {
+            "id": "5ec4ab6f-2656-4ed8-8ddf-7e7301ebe9c2",
+            "minValue": null,
+            "maxValue": null,
+            "code": 2,
+            "condition": null,
+            "questionId": "dc9aadff-a859-44ff-9daf-f051c45117e1",
+            "questionChoiceId": "3be1c6de-3f78-4112-968e-a20adc8378d9",
+            "createdAt": "2020-08-14T12:20:59.604Z",
+            "updatedAt": "2020-08-14T12:20:59.604Z",
+            "deletedAt": null
+          },
+          {
+            "id": "8de17920-8b48-44e1-9ddc-ae3fa5be525a",
+            "minValue": null,
+            "maxValue": null,
+            "code": 3,
+            "condition": null,
+            "questionId": "dc9aadff-a859-44ff-9daf-f051c45117e1",
+            "questionChoiceId": "c1fdf441-62b7-4a75-838b-164a7740b620",
+            "createdAt": "2020-08-14T12:20:59.604Z",
+            "updatedAt": "2020-08-14T12:20:59.604Z",
+            "deletedAt": null
+          },
+          {
+            "id": "9a32787e-cb46-4586-ae4a-f3c91d9d9601",
+            "minValue": null,
+            "maxValue": null,
+            "code": 4,
+            "condition": null,
+            "questionId": "dc9aadff-a859-44ff-9daf-f051c45117e1",
+            "questionChoiceId": "1cc45a9c-9c96-432b-83b3-0159f43f2196",
+            "createdAt": "2020-08-14T12:20:59.604Z",
+            "updatedAt": "2020-08-14T12:20:59.604Z",
+            "deletedAt": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "638379cb-adb5-4807-9222-a2e9b32dc738",
+      "title": "What is the course you are accepted into?",
+      "type": "multiple_choice",
+      "description": null,
+      "required": false,
+      "position": 17,
+      "ref": "79fa9cf4-7be9-47f7-9a69-1219092f7db6",
+      "questionCode": "course",
+      "mainQuestionId": null,
+      "questionnaireId": "2a7640b4-762f-4f15-a232-9a0159359820",
+      "createdAt": "2020-08-14T12:20:59.401Z",
+      "updatedAt": "2020-08-14T12:20:59.401Z",
+      "deletedAt": null,
+      "attachment": null,
+      "properties": {
+        "choices": [
+          {
+            "id": "6447fe33-2d37-45d9-abe1-66003681ade8",
+            "label": "Arts (Education)",
+            "position": 1,
+            "ref": "7ba19afa-918e-4ad7-b225-09726ea616fd",
+            "questionId": "638379cb-adb5-4807-9222-a2e9b32dc738",
+            "createdAt": "2020-08-14T12:20:59.513Z",
+            "updatedAt": "2020-08-14T12:20:59.513Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "503b0164-c7ab-4e26-ae26-bef9c713548b",
+            "label": "Other, please specify",
+            "position": 3,
+            "ref": "4d2111ab-23a2-4a05-b966-361ef6d36563",
+            "questionId": "638379cb-adb5-4807-9222-a2e9b32dc738",
+            "createdAt": "2020-08-14T12:20:59.513Z",
+            "updatedAt": "2020-08-14T12:20:59.513Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "48c3d1b6-ba49-4dd7-b1a2-57558d70713e",
+            "label": "Science (Education)",
+            "position": 2,
+            "ref": "0d629bd3-9159-4497-9eb1-e72a38ff55c9",
+            "questionId": "638379cb-adb5-4807-9222-a2e9b32dc738",
+            "createdAt": "2020-08-14T12:20:59.513Z",
+            "updatedAt": "2020-08-14T12:20:59.513Z",
+            "deletedAt": null,
+            "attachment": null
+          }
+        ],
+        "responseCodes": [
+          {
+            "id": "d31984d8-d7c5-4721-a309-9c051688f1d9",
+            "minValue": null,
+            "maxValue": null,
+            "code": 1,
+            "condition": null,
+            "questionId": "638379cb-adb5-4807-9222-a2e9b32dc738",
+            "questionChoiceId": "6447fe33-2d37-45d9-abe1-66003681ade8",
+            "createdAt": "2020-08-14T12:20:59.609Z",
+            "updatedAt": "2020-08-14T12:20:59.609Z",
+            "deletedAt": null
+          },
+          {
+            "id": "5b080b43-1262-40fd-8c62-766b67d63d51",
+            "minValue": null,
+            "maxValue": null,
+            "code": 2,
+            "condition": null,
+            "questionId": "638379cb-adb5-4807-9222-a2e9b32dc738",
+            "questionChoiceId": "48c3d1b6-ba49-4dd7-b1a2-57558d70713e",
+            "createdAt": "2020-08-14T12:20:59.609Z",
+            "updatedAt": "2020-08-14T12:20:59.609Z",
+            "deletedAt": null
+          },
+          {
+            "id": "347a2bb5-80ca-49d2-b7a6-84ee8cf09143",
+            "minValue": null,
+            "maxValue": null,
+            "code": 3,
+            "condition": null,
+            "questionId": "638379cb-adb5-4807-9222-a2e9b32dc738",
+            "questionChoiceId": "503b0164-c7ab-4e26-ae26-bef9c713548b",
+            "createdAt": "2020-08-14T12:20:59.609Z",
+            "updatedAt": "2020-08-14T12:20:59.609Z",
+            "deletedAt": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "5ff1bb8f-f9bb-4f72-9ced-223291d5d590",
+      "title": "What is the course you are accepted into?",
+      "type": "multiple_choice",
+      "description": null,
+      "required": false,
+      "position": 18,
+      "ref": "89f7647f-4dc4-4e5a-ac05-99455b9886ba",
+      "questionCode": "course",
+      "mainQuestionId": null,
+      "questionnaireId": "2a7640b4-762f-4f15-a232-9a0159359820",
+      "createdAt": "2020-08-14T12:20:59.402Z",
+      "updatedAt": "2020-08-14T12:20:59.402Z",
+      "deletedAt": null,
+      "attachment": null,
+      "properties": {
+        "choices": [
+          {
+            "id": "d2cbe052-6c60-4a4c-9faa-ada5cf62730a",
+            "label": "Other, please specify",
+            "position": 2,
+            "ref": "68979d6c-b955-488f-a4d9-2f17e69675d2",
+            "questionId": "5ff1bb8f-f9bb-4f72-9ced-223291d5d590",
+            "createdAt": "2020-08-14T12:20:59.517Z",
+            "updatedAt": "2020-08-14T12:20:59.517Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "cedc7fd4-a2fa-49cb-b8b6-6705fdc811e0",
+            "label": "Sport Science and Management",
+            "position": 1,
+            "ref": "96a5dc92-b4d4-4197-a22d-e540a730982b",
+            "questionId": "5ff1bb8f-f9bb-4f72-9ced-223291d5d590",
+            "createdAt": "2020-08-14T12:20:59.517Z",
+            "updatedAt": "2020-08-14T12:20:59.517Z",
+            "deletedAt": null,
+            "attachment": null
+          }
+        ],
+        "responseCodes": [
+          {
+            "id": "c6cadea9-9148-44f5-b895-99c0260f4722",
+            "minValue": null,
+            "maxValue": null,
+            "code": 1,
+            "condition": null,
+            "questionId": "5ff1bb8f-f9bb-4f72-9ced-223291d5d590",
+            "questionChoiceId": "cedc7fd4-a2fa-49cb-b8b6-6705fdc811e0",
+            "createdAt": "2020-08-14T12:20:59.611Z",
+            "updatedAt": "2020-08-14T12:20:59.611Z",
+            "deletedAt": null
+          },
+          {
+            "id": "30790c81-0c8f-4e9c-bedd-894f5ab617e4",
+            "minValue": null,
+            "maxValue": null,
+            "code": 2,
+            "condition": null,
+            "questionId": "5ff1bb8f-f9bb-4f72-9ced-223291d5d590",
+            "questionChoiceId": "d2cbe052-6c60-4a4c-9faa-ada5cf62730a",
+            "createdAt": "2020-08-14T12:20:59.611Z",
+            "updatedAt": "2020-08-14T12:20:59.611Z",
+            "deletedAt": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "dae8668a-d491-46a8-a353-407ca9e3818f",
+      "title": "What is the course you are accepted into?",
+      "type": "multiple_choice",
+      "description": null,
+      "required": false,
+      "position": 19,
+      "ref": "e3d944bd-774a-469f-95e1-1120437d3a0d",
+      "questionCode": "course",
+      "mainQuestionId": null,
+      "questionnaireId": "2a7640b4-762f-4f15-a232-9a0159359820",
+      "createdAt": "2020-08-14T12:20:59.402Z",
+      "updatedAt": "2020-08-14T12:20:59.402Z",
+      "deletedAt": null,
+      "attachment": null,
+      "properties": {
+        "choices": [
+          {
+            "id": "9b4a6526-7f14-4455-9904-7a3746283f38",
+            "label": "Other, please specify",
+            "position": 2,
+            "ref": "b98466a6-6194-4cf9-8de2-2f59a4a99404",
+            "questionId": "dae8668a-d491-46a8-a353-407ca9e3818f",
+            "createdAt": "2020-08-14T12:20:59.522Z",
+            "updatedAt": "2020-08-14T12:20:59.522Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "b746ae02-0ab7-4996-957b-bc5304e47685",
+            "label": "Art, Design and Media",
+            "position": 1,
+            "ref": "8d303e02-e96e-48c3-b84e-92aa7ce625ee",
+            "questionId": "dae8668a-d491-46a8-a353-407ca9e3818f",
+            "createdAt": "2020-08-14T12:20:59.522Z",
+            "updatedAt": "2020-08-14T12:20:59.522Z",
+            "deletedAt": null,
+            "attachment": null
+          }
+        ],
+        "responseCodes": [
+          {
+            "id": "f701203d-c0a5-4d21-b4fb-564d5a1fe7b6",
+            "minValue": null,
+            "maxValue": null,
+            "code": 1,
+            "condition": null,
+            "questionId": "dae8668a-d491-46a8-a353-407ca9e3818f",
+            "questionChoiceId": "b746ae02-0ab7-4996-957b-bc5304e47685",
+            "createdAt": "2020-08-14T12:20:59.614Z",
+            "updatedAt": "2020-08-14T12:20:59.614Z",
+            "deletedAt": null
+          },
+          {
+            "id": "069fb0b1-44f3-462d-ab66-b9745a538e20",
+            "minValue": null,
+            "maxValue": null,
+            "code": 2,
+            "condition": null,
+            "questionId": "dae8668a-d491-46a8-a353-407ca9e3818f",
+            "questionChoiceId": "9b4a6526-7f14-4455-9904-7a3746283f38",
+            "createdAt": "2020-08-14T12:20:59.614Z",
+            "updatedAt": "2020-08-14T12:20:59.614Z",
+            "deletedAt": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "05aefa64-d368-4c75-84cd-132f37b259f0",
+      "title": "What is the course you are accepted into?",
+      "type": "multiple_choice",
+      "description": null,
+      "required": false,
+      "position": 20,
+      "ref": "5858940f-24ae-4398-b2f1-bd73d49d9bb3",
+      "questionCode": "course",
+      "mainQuestionId": null,
+      "questionnaireId": "2a7640b4-762f-4f15-a232-9a0159359820",
+      "createdAt": "2020-08-14T12:20:59.402Z",
+      "updatedAt": "2020-08-14T12:20:59.402Z",
+      "deletedAt": null,
+      "attachment": null,
+      "properties": {
+        "choices": [
+          {
+            "id": "5230dd0a-c7a9-4020-9582-c21790ff90f4",
+            "label": "Other, please specify",
+            "position": 5,
+            "ref": "daee97e3-5fe5-4400-a55b-6951cefa4d6a",
+            "questionId": "05aefa64-d368-4c75-84cd-132f37b259f0",
+            "createdAt": "2020-08-14T12:20:59.525Z",
+            "updatedAt": "2020-08-14T12:20:59.525Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "4143c8b5-5c7b-4760-97d4-726295dc2a6c",
+            "label": "Biomedical Sciences and Chinese Medicine",
+            "position": 4,
+            "ref": "0b4b8e13-b35d-4f89-9a76-97d8b5ef1d9b",
+            "questionId": "05aefa64-d368-4c75-84cd-132f37b259f0",
+            "createdAt": "2020-08-14T12:20:59.524Z",
+            "updatedAt": "2020-08-14T12:20:59.524Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "833e4f7b-6603-4df1-af76-4607648b45d8",
+            "label": "Biomedical Sciences and BioBusiness",
+            "position": 3,
+            "ref": "c420dd5a-b20f-4f13-a564-ff396a3e88d4",
+            "questionId": "05aefa64-d368-4c75-84cd-132f37b259f0",
+            "createdAt": "2020-08-14T12:20:59.524Z",
+            "updatedAt": "2020-08-14T12:20:59.524Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "cdb210b6-a2d7-423d-b1b7-1fba169f5adf",
+            "label": "Biological Sciences and Psychology",
+            "position": 2,
+            "ref": "c4e34414-c632-43c1-9009-1937cef595ee",
+            "questionId": "05aefa64-d368-4c75-84cd-132f37b259f0",
+            "createdAt": "2020-08-14T12:20:59.524Z",
+            "updatedAt": "2020-08-14T12:20:59.524Z",
+            "deletedAt": null,
+            "attachment": null
+          },
+          {
+            "id": "ed49bf0e-08a6-4f39-bc2d-671a4b1fed30",
+            "label": "Biological Sciences",
+            "position": 1,
+            "ref": "ae134287-b4bf-4bd1-8047-4cb8779aafd1",
+            "questionId": "05aefa64-d368-4c75-84cd-132f37b259f0",
+            "createdAt": "2020-08-14T12:20:59.524Z",
+            "updatedAt": "2020-08-14T12:20:59.524Z",
+            "deletedAt": null,
+            "attachment": null
+          }
+        ],
+        "responseCodes": [
+          {
+            "id": "679316c0-3d90-48e3-ac25-daec1225f65e",
+            "minValue": null,
+            "maxValue": null,
+            "code": 1,
+            "condition": null,
+            "questionId": "05aefa64-d368-4c75-84cd-132f37b259f0",
+            "questionChoiceId": "ed49bf0e-08a6-4f39-bc2d-671a4b1fed30",
+            "createdAt": "2020-08-14T12:20:59.620Z",
+            "updatedAt": "2020-08-14T12:20:59.620Z",
+            "deletedAt": null
+          },
+          {
+            "id": "b96d508f-036f-4963-a7b6-563afaa3f676",
+            "minValue": null,
+            "maxValue": null,
+            "code": 2,
+            "condition": null,
+            "questionId": "05aefa64-d368-4c75-84cd-132f37b259f0",
+            "questionChoiceId": "cdb210b6-a2d7-423d-b1b7-1fba169f5adf",
+            "createdAt": "2020-08-14T12:20:59.620Z",
+            "updatedAt": "2020-08-14T12:20:59.620Z",
+            "deletedAt": null
+          },
+          {
+            "id": "04de683d-7961-42b0-8862-a9d16780b332",
+            "minValue": null,
+            "maxValue": null,
+            "code": 3,
+            "condition": null,
+            "questionId": "05aefa64-d368-4c75-84cd-132f37b259f0",
+            "questionChoiceId": "833e4f7b-6603-4df1-af76-4607648b45d8",
+            "createdAt": "2020-08-14T12:20:59.620Z",
+            "updatedAt": "2020-08-14T12:20:59.620Z",
+            "deletedAt": null
+          },
+          {
+            "id": "c5cc3ebe-552a-4849-96e3-63710aa2292a",
+            "minValue": null,
+            "maxValue": null,
+            "code": 4,
+            "condition": null,
+            "questionId": "05aefa64-d368-4c75-84cd-132f37b259f0",
+            "questionChoiceId": "4143c8b5-5c7b-4760-97d4-726295dc2a6c",
+            "createdAt": "2020-08-14T12:20:59.620Z",
+            "updatedAt": "2020-08-14T12:20:59.620Z",
+            "deletedAt": null
+          },
+          {
+            "id": "b6d66eec-0b78-47d4-9a09-33642c6a7309",
+            "minValue": null,
+            "maxValue": null,
+            "code": 5,
+            "condition": null,
+            "questionId": "05aefa64-d368-4c75-84cd-132f37b259f0",
+            "questionChoiceId": "5230dd0a-c7a9-4020-9582-c21790ff90f4",
+            "createdAt": "2020-08-14T12:20:59.620Z",
+            "updatedAt": "2020-08-14T12:20:59.620Z",
+            "deletedAt": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "f8c5a35f-d016-4785-adac-ae72e1c0fd4f",
+      "title": "Please specify the course you accepted into",
+      "type": "long_text",
+      "description": null,
+      "required": false,
+      "position": 21,
+      "ref": "eeae12e8-f4e5-4013-8149-e776ba443bdd",
+      "questionCode": "course",
+      "mainQuestionId": null,
+      "questionnaireId": "2a7640b4-762f-4f15-a232-9a0159359820",
+      "createdAt": "2020-08-14T12:20:59.402Z",
+      "updatedAt": "2020-08-14T12:20:59.402Z",
+      "deletedAt": null,
+      "attachment": null,
+      "properties": {
+        "responseCodes": [
+          {
+            "id": "b3131749-5521-4a05-846d-2b9bbcfb332f",
+            "minValue": null,
+            "maxValue": null,
+            "code": 1,
+            "condition": null,
+            "questionId": "f8c5a35f-d016-4785-adac-ae72e1c0fd4f",
+            "questionChoiceId": null,
+            "createdAt": "2020-08-14T12:20:59.528Z",
+            "updatedAt": "2020-08-14T12:20:59.528Z",
+            "deletedAt": null
+          }
+        ],
+        "minRange": 1,
+        "maxRange": 255
+      }
+    }
+  ],
+  "logicJumps": [
+    {
+      "questionId": "386a25ae-4877-402f-8c0f-56eed00996ba",
+      "actions": [
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "2cebfdef-446c-4b62-a1a3-97d89489fa47",
+          "variable": {
+            "type": "choice",
+            "value": "60051fe8-22e9-4fe3-9f0d-dfb4ce204eb0"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "8510c5cf-2f1f-4558-97ce-0979d0fc1f93",
+          "variable": {
+            "type": "choice",
+            "value": "2474cc8f-64a0-412e-b65f-ae3eb757296d"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "8510c5cf-2f1f-4558-97ce-0979d0fc1f93",
+          "variable": {
+            "type": "choice",
+            "value": "20e716b2-28d9-4364-a9a5-1875bb73f989"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "8510c5cf-2f1f-4558-97ce-0979d0fc1f93",
+          "variable": {
+            "type": "choice",
+            "value": "fa77eb58-a39e-46b4-ae4f-8c43878773a6"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "8510c5cf-2f1f-4558-97ce-0979d0fc1f93",
+          "variable": {
+            "type": "choice",
+            "value": "80f74080-74d2-465d-b37f-d6c4e878be59"
+          }
+        }
+      ]
+    },
+    {
+      "questionId": "8510c5cf-2f1f-4558-97ce-0979d0fc1f93",
+      "actions": [
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "95cd57bc-d84f-4328-9284-1a0444b726e1",
+          "variable": {
+            "type": "choice",
+            "value": "a536588b-2220-44e1-97da-3508c97591ef"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "95cd57bc-d84f-4328-9284-1a0444b726e1",
+          "variable": {
+            "type": "choice",
+            "value": "556ae05c-b5f1-4fc7-b9dd-7dedb1c889af"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "95cd57bc-d84f-4328-9284-1a0444b726e1",
+          "variable": {
+            "type": "choice",
+            "value": "ca1d8290-2d2b-43f7-8835-a2397719a3ac"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "95cd57bc-d84f-4328-9284-1a0444b726e1",
+          "variable": {
+            "type": "choice",
+            "value": "facbef59-2229-4ed4-815e-d98d222d0cac"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "da99cc5c-833a-4267-be7a-0f29239f1c95",
+          "variable": {
+            "type": "choice",
+            "value": "2cc6bc6d-e3ac-4dc3-8e4e-ad6633715053"
+          }
+        }
+      ]
+    },
+    {
+      "questionId": "95cd57bc-d84f-4328-9284-1a0444b726e1",
+      "actions": [
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "bab3cdfe-46ca-4147-a70e-da0032de0be5",
+          "variable": {
+            "type": "choice",
+            "value": "dfa7080e-2fe6-461e-bef4-d910cdec395a"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "05a8b564-679f-464d-9ad3-b94745ee5316",
+          "variable": {
+            "type": "choice",
+            "value": "5b23059f-a7be-44fc-9bef-b41ab833fea0"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "05a8b564-679f-464d-9ad3-b94745ee5316",
+          "variable": {
+            "type": "choice",
+            "value": "35ae5e0e-8826-4f44-a63f-e14d43eb35fb"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "05a8b564-679f-464d-9ad3-b94745ee5316",
+          "variable": {
+            "type": "choice",
+            "value": "9040ae4c-c119-4282-8f62-55ffc1e3b1a7"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "05a8b564-679f-464d-9ad3-b94745ee5316",
+          "variable": {
+            "type": "choice",
+            "value": "05cd71f8-be56-4e26-935e-f731180bb814"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "05a8b564-679f-464d-9ad3-b94745ee5316",
+          "variable": {
+            "type": "choice",
+            "value": "d206d0c2-2cf1-4f77-baa9-674fa3e93576"
+          }
+        }
+      ]
+    },
+    {
+      "questionId": "6a8c89a2-0db1-4ee0-a3e9-ddccf642be8f",
+      "actions": [
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "4887add9-0359-4da5-bdc9-0a1d01c637ef",
+          "variable": {
+            "type": "choice",
+            "value": "7fed18a6-9b3c-4d6b-8746-36347921918f"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "dc9aadff-a859-44ff-9daf-f051c45117e1",
+          "variable": {
+            "type": "choice",
+            "value": "071395d4-136a-4b20-aa0e-6ab7f50d936b"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "638379cb-adb5-4807-9222-a2e9b32dc738",
+          "variable": {
+            "type": "choice",
+            "value": "b3858294-d277-404f-ad75-6dc93ae1bcd8"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "5ff1bb8f-f9bb-4f72-9ced-223291d5d590",
+          "variable": {
+            "type": "choice",
+            "value": "915b8133-1a1d-464a-ac27-d1487bfbbdae"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "dae8668a-d491-46a8-a353-407ca9e3818f",
+          "variable": {
+            "type": "choice",
+            "value": "5fba90a3-4035-48c2-8b93-2f5b04a9350e"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "05aefa64-d368-4c75-84cd-132f37b259f0",
+          "variable": {
+            "type": "choice",
+            "value": "f4f840ce-c865-4ac4-99ee-e9175e6110a8"
+          }
+        }
+      ]
+    },
+    {
+      "questionId": "4887add9-0359-4da5-bdc9-0a1d01c637ef",
+      "actions": [
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "f8c5a35f-d016-4785-adac-ae72e1c0fd4f",
+          "variable": {
+            "type": "choice",
+            "value": "19143718-03d4-4d36-8608-19640bf01895"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "f8c5a35f-d016-4785-adac-ae72e1c0fd4f",
+          "variable": {
+            "type": "choice",
+            "value": "c4648147-4513-4c1a-baab-73d26abc8c41"
+          }
+        }
+      ]
+    },
+    {
+      "questionId": "dc9aadff-a859-44ff-9daf-f051c45117e1",
+      "actions": [
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "f8c5a35f-d016-4785-adac-ae72e1c0fd4f",
+          "variable": {
+            "type": "choice",
+            "value": "85471356-24dc-491d-b1b3-6e886da6db0e"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "f8c5a35f-d016-4785-adac-ae72e1c0fd4f",
+          "variable": {
+            "type": "choice",
+            "value": "3be1c6de-3f78-4112-968e-a20adc8378d9"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "f8c5a35f-d016-4785-adac-ae72e1c0fd4f",
+          "variable": {
+            "type": "choice",
+            "value": "c1fdf441-62b7-4a75-838b-164a7740b620"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "f8c5a35f-d016-4785-adac-ae72e1c0fd4f",
+          "variable": {
+            "type": "choice",
+            "value": "1cc45a9c-9c96-432b-83b3-0159f43f2196"
+          }
+        }
+      ]
+    },
+    {
+      "questionId": "638379cb-adb5-4807-9222-a2e9b32dc738",
+      "actions": [
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "f8c5a35f-d016-4785-adac-ae72e1c0fd4f",
+          "variable": {
+            "type": "choice",
+            "value": "6447fe33-2d37-45d9-abe1-66003681ade8"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "f8c5a35f-d016-4785-adac-ae72e1c0fd4f",
+          "variable": {
+            "type": "choice",
+            "value": "48c3d1b6-ba49-4dd7-b1a2-57558d70713e"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "f8c5a35f-d016-4785-adac-ae72e1c0fd4f",
+          "variable": {
+            "type": "choice",
+            "value": "503b0164-c7ab-4e26-ae26-bef9c713548b"
+          }
+        }
+      ]
+    },
+    {
+      "questionId": "dae8668a-d491-46a8-a353-407ca9e3818f",
+      "actions": [
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "f8c5a35f-d016-4785-adac-ae72e1c0fd4f",
+          "variable": {
+            "type": "choice",
+            "value": "b746ae02-0ab7-4996-957b-bc5304e47685"
+          }
+        },
+        {
+          "condition": "is",
+          "position": 1,
+          "nextQuestionId": "f8c5a35f-d016-4785-adac-ae72e1c0fd4f",
+          "variable": {
+            "type": "choice",
+            "value": "9b4a6526-7f14-4455-9904-7a3746283f38"
+          }
+        }
+      ]
+    }
+  ]
+}

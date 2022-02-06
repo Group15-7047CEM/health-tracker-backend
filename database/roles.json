@@ -1,0 +1,23 @@
+[
+  {
+    "label": "Master Admin",
+    "permissions": "1111111"
+  },
+  {
+    "label": "Admin",
+    "permissions": "1111111"
+  },
+  {
+    "label": "Approver",
+    "permissions": "1111111"
+  },
+  {
+    "label": "Editor",
+    "permissions": "1111111"
+  },
+  {
+    "label": "Viewer",
+    "permissions": "1111111"
+  }
+]
+
