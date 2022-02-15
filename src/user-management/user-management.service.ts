@@ -4,13 +4,11 @@ import { Op } from 'sequelize';
 import { HttpErrorMessages } from 'src/common/constants';
 import { BaseException } from 'src/common/exceptions';
 import { ERROR_MESSAGES } from '../common/response-messages';
-import { EducationLessonFavouriteModel, EducationLessonJournalModel, EducationLessonModel, EducationLessonUnitModel, ParticipantEducationLessonModel } from '../education-lessons/models';
 import { UsersWithCount } from './classes';
 import {
   GetUsersRequestDto,
   UpdateUserByIdRequestDto, UserManagementRequestDto
 } from './dto';
-import { CreateSearchEntryRequestDto } from './dto/create-search-entry.dto';
 import { UserModel, UserSearchModel } from './models';
 import {
   UserRepository, UserSearchRepository
@@ -24,23 +22,6 @@ export class UserManagementService {
     private readonly userSearchRepo: UserSearchRepository,
   ) {}
 
-  async globalSearch(query): Promise<any> {
-    const results = await EducationLessonModel.findAll({
-      where: {
-        [Op.or]: [
-          { name: { [Op.iLike]: `%${query}%` } },
-          { description: { [Op.iLike]: `%${query}%` } },
-        ],
-      },
-      attributes: [ 'id', 'name', 'description', 'imageUrl']
-    })
-
-    return {
-      hits: results.length,
-      results: results
-    }
-  }
-
   /**
    * Gets recent searches
    * @param userId 
@@ -48,79 +29,6 @@ export class UserManagementService {
    */
   async getRecentSearches(userId: string): Promise<UserSearchModel[]> {
     return await this.userSearchRepo.findRecentByUserId(userId)
-  }
-
-  /**
-   * create search entry
-   * @param userId 
-   * @returns {Promise<UserSearchModel>} searchEntry
-   */
-  async createSearchEntry(userId: string, data: CreateSearchEntryRequestDto): Promise<UserSearchModel> {
-    return await this.userSearchRepo.create(userId, data)
-  }
-
-  /**
-   * Removes search entry
-   * @param {string} id 
-   * @param {string} userId 
-   * @returns {Promise<boolean>} search entry 
-   */
-  async removeSearchEntry(id: string, userId: string): Promise<boolean> {
-    const deletedEntry = await this.userSearchRepo.remove(id, userId)
-    if (!deletedEntry) {
-      throw new BaseException(ERROR_MESSAGES.search_entry_not_found)
-        .setName(HttpErrorMessages[HttpStatus.NOT_FOUND])
-        .setStatusCode(HttpStatus.NOT_FOUND)
-        .getException();
-    }
-    return null
-  }
-
-  async getJournals(participantId: string) {
-    const educationLessons = await ParticipantEducationLessonModel.findAll({
-      where: {
-        participantId
-      },
-      attributes: [ 'educationLessonId' ]
-    })
-    const educationLessonsIds = educationLessons.map(lesson => {
-      return lesson.educationLessonId
-    })
-
-    return await EducationLessonModel.findAll({
-      where: {
-        id: educationLessonsIds
-      },
-      include: [
-        {
-          model: EducationLessonUnitModel,
-          attributes: ['id', 'title', 'description'],
-          include: [
-            {
-              model: EducationLessonJournalModel,
-              where: {
-                participantId
-              },
-              attributes: ['id', 'value'],
-              required: false
-            }
-          ]
-        }
-      ]
-    })
-  }
-
-  async getFavourites(participantId: string) {
-    return await EducationLessonFavouriteModel.findAll({
-      where: {
-        participantId
-      },
-      include: [
-        {
-          model: EducationLessonModel
-        }
-      ]
-    })
   }
 
   async createUser(userData: UserManagementRequestDto): Promise<UserModel> {

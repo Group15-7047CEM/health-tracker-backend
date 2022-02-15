@@ -8,6 +8,9 @@ module.exports = {
     "database": process.env.DB_DATABASE_NAME,
     "host": process.env.DB_HOST,
     "dialect": process.env.DB_DIALECT,
+    "dialectOptions": {
+      "ssl": true
+    },
     "seederStorage": process.env.DB_SEED_STORAGE,
     "seederStorageTableName": process.env.DB_SEED_TABLE_NAME
   },
@@ -17,6 +20,9 @@ module.exports = {
     "database": process.env.DB_DATABASE_NAME,
     "host": process.env.DB_HOST,
     "dialect": process.env.DB_DIALECT,
+    "dialectOptions": {
+      "ssl": true
+    },
     "seederStorage": process.env.DB_SEED_STORAGE,
     "seederStorageTableName": process.env.DB_SEED_TABLE_NAME
   },
@@ -26,6 +32,9 @@ module.exports = {
     "database": process.env.DB_DATABASE_NAME,
     "host": process.env.DB_HOST,
     "dialect": process.env.DB_DIALECT,
+    "dialectOptions": {
+      "ssl": true
+    },
     "seederStorage": process.env.DB_SEED_STORAGE,
     "seederStorageTableName": process.env.DB_SEED_TABLE_NAME
   }

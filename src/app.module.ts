@@ -19,6 +19,12 @@ import { customModules } from './custom-modules';
       inject: [ConfigService],
       useFactory: (configService: ConfigService) => ({
         dialect: configService.get<string>('DB_DIALECT') as Dialect,
+        dialectOptions: {
+          ssl: {
+            rejectUnauthorized: false,
+            
+          },
+        },
         host: configService.get<string>('DB_HOST'),
         port: +configService.get<string>('DB_PORT'),
         username: configService.get<string>('DB_USERNAME'),

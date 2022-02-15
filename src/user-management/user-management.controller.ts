@@ -210,19 +210,6 @@ export class UserManagementController {
     }
   }
 
-  @Get('search')
-  @UseGuards(JwtAuthGuard)
-  async globalSearch(@Query(new JoiValidationPipe(globalSearch)) query: any) {
-    try {
-      return new DataResponseBuilder().successResponse(
-        await this.userService.globalSearch(query.q),
-        'Results retrieved successfully',
-      );
-    } catch (error) {
-      new ErrorResponseBuilder().buildExceptionAndThrow(error);
-    }
-  }
-
   @Get('onboarding')
   // @UseGuards(JwtAuthGuard)
   async onboardStatus(@GetUser('id') userId: string) {
@@ -263,33 +250,6 @@ export class UserManagementController {
       return new DataResponseBuilder().successResponse(
         await this.userService.getRecentSearches(userId),
         'Results retrieved successfully',
-      );
-    } catch (error) {
-      new ErrorResponseBuilder().buildExceptionAndThrow(error);
-    }
-  }
-
-  @Post('search/recent')
-  @UseGuards(JwtAuthGuard)
-  @UsePipes(new JoiValidationPipe(createSearchEntry))
-  async createRecentKeywords(@Body() data: CreateSearchEntryRequestDto, @GetUser('id') userId: string) {
-    try {
-      return new DataResponseBuilder().successResponse(
-        await this.userService.createSearchEntry(userId, data),
-        'Entry successful',
-      );
-    } catch (error) {
-      new ErrorResponseBuilder().buildExceptionAndThrow(error);
-    }
-  }
-
-  @Delete('search/recent/:id')
-  @UseGuards(JwtAuthGuard)
-  async removeRecentKeywords(@Param('id') id: string, @GetUser('id') userId: string) {
-    try {
-      return new DataResponseBuilder().successResponse(
-        await this.userService.removeSearchEntry(id, userId),
-        'Entry deleted successfully',
       );
     } catch (error) {
       new ErrorResponseBuilder().buildExceptionAndThrow(error);
@@ -382,38 +342,4 @@ export class UserManagementController {
     }
   }
 
-
-  @Get(':id/favourites')
-  @UseGuards(JwtAuthGuard)
-  @ApiTags('Users')
-  async getFavourites(
-    @GetUser('id') id: string
-  ): Promise<DataResponseSkeleton<any>> {
-    try {
-      const favourites = await this.userService.getFavourites(id);
-      return new DataResponseBuilder().successResponse(
-        favourites,
-        'User favourites retrieved successfully.',
-      );
-    } catch (error) {
-      new ErrorResponseBuilder().buildExceptionAndThrow(error);
-    }
-  }
-
-  @Get(':id/journals')
-  @UseGuards(JwtAuthGuard)
-  @ApiTags('Users')
-  async getJournals(
-    @GetUser('id') id: string
-  ): Promise<DataResponseSkeleton<any>> {
-    try {
-      const favourites = await this.userService.getJournals(id);
-      return new DataResponseBuilder().successResponse(
-        favourites,
-        'User favourites retrieved successfully.',
-      );
-    } catch (error) {
-      new ErrorResponseBuilder().buildExceptionAndThrow(error);
-    }
-  }
 }

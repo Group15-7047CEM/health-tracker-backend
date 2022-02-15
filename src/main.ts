@@ -21,18 +21,18 @@ async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
   const configService: ConfigService = app.get(ConfigService);
 
-  const adminConfig: ServiceAccount = {
-    projectId: configService.get<string>('FIREBASE_PROJECT_ID'),
-    privateKey: configService
-      .get<string>('FIREBASE_PRIVATE_KEY')
-      .replace(/\\n/g, '\n'),
-    clientEmail: configService.get<string>('FIREBASE_CLIENT_EMAIL'),
-  };
+  // const adminConfig: ServiceAccount = {
+  //   projectId: configService.get<string>('FIREBASE_PROJECT_ID'),
+  //   privateKey: configService
+  //     .get<string>('FIREBASE_PRIVATE_KEY')
+  //     .replace(/\\n/g, '\n'),
+  //   clientEmail: configService.get<string>('FIREBASE_CLIENT_EMAIL'),
+  // };
 
-  admin.initializeApp({
-    credential: admin.credential.cert(adminConfig),
-    databaseURL: 'https://singer-318606.firebaseio.com',
-  });
+  // admin.initializeApp({
+  //   credential: admin.credential.cert(adminConfig),
+  //   databaseURL: 'https://singer-318606.firebaseio.com',
+  // });
 
   app.use(helmet()); // https://github.com/helmetjs/helmet#how-it-works
   app.use(bodyParser.json({ limit: '50mb' }));
@@ -64,5 +64,6 @@ async function bootstrap() {
   app.setGlobalPrefix(`api`);
 
   await app.listen(process.env.PORT || 4000); // For Cloud Run
+  // await app.listen(parseInt(process.env.PORT, "0.0.0.0") || 3000);
 }
 bootstrap();

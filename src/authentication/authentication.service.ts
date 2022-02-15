@@ -105,7 +105,7 @@ export class AuthenticationService {
       subject: 'Email Verification',
     };
     // await sendEmailWithSES(content);
-    await sendEmailWithSendgrid(content); // TODO: Use this
+    // await sendEmailWithSendgrid(content); // TODO: Use this
     // const token = this.jwtService.sign(
     //   createdUser.id + '#' + createdUser.email,
     // );
@@ -210,33 +210,37 @@ export class AuthenticationService {
         .getException();
     }
 
+    /*
     if (user.role === userRoles[5]) {
+      console.log("HERE 2");
       throw new BaseException(ERROR_MESSAGES.invalid_credential)
         .setName(HttpErrorMessages[HttpStatus.FORBIDDEN])
         .setStatusCode(HttpStatus.FORBIDDEN)
         .getException();
     }
-    
-    if (!user.mobileVerified) {
-      throw new BaseException(ERROR_MESSAGES.user_not_verified)
-        .setName(HttpErrorMessages[HttpStatus.BAD_REQUEST])
-        .setStatusCode(HttpStatus.BAD_REQUEST)
-        .getException();
-    }
+    */
+    // console.log("HERE 3")
+    // if (!user.mobileVerified) {
+    //   throw new BaseException(ERROR_MESSAGES.user_not_verified)
+    //     .setName(HttpErrorMessages[HttpStatus.BAD_REQUEST])
+    //     .setStatusCode(HttpStatus.BAD_REQUEST)
+    //     .getException();
+    // }
 
-    if (!user.emailVerified) {
-      throw new BaseException(ERROR_MESSAGES.user_email_not_verified)
-        .setName(HttpErrorMessages[HttpStatus.BAD_REQUEST])
-        .setStatusCode(HttpStatus.BAD_REQUEST)
-        .getException();
-    }
+    // if (!user.emailVerified) {
+    //   throw new BaseException(ERROR_MESSAGES.user_email_not_verified)
+    //     .setName(HttpErrorMessages[HttpStatus.BAD_REQUEST])
+    //     .setStatusCode(HttpStatus.BAD_REQUEST)
+    //     .getException();
+    // }
 
-    if (user.status === 'inactive') {
-      throw new BaseException(ERROR_MESSAGES.deactivated_user)
-        .setName(HttpErrorMessages[HttpStatus.BAD_REQUEST])
-        .setStatusCode(HttpStatus.BAD_REQUEST)
-        .getException();
-    }
+    // TODO: Keep 'active' always
+    // if (user.status === 'inactive') {
+    //   throw new BaseException(ERROR_MESSAGES.deactivated_user)
+    //     .setName(HttpErrorMessages[HttpStatus.BAD_REQUEST])
+    //     .setStatusCode(HttpStatus.BAD_REQUEST)
+    //     .getException();
+    // }
 
     // if (user.role == userRoles[2]) {
     //   // const participant = await this.participantService.getParticipantByUserId(
@@ -254,13 +258,13 @@ export class AuthenticationService {
     //   .setStatusCode(HttpStatus.BAD_REQUEST).getException();
     // }
 
-    if (fcmToken) {
-      try {
-        await this.addFCMToken(user.id, fcmToken);
-      } catch (error) {
-        console.log('[ERROR] Add FCM Token: ', error);
-      }
-    }
+    // if (fcmToken) {
+    //   try {
+    //     await this.addFCMToken(user.id, fcmToken);
+    //   } catch (error) {
+    //     console.log('[ERROR] Add FCM Token: ', error);
+    //   }
+    // }
     await UserModel.update(
       { isLoggedIn: true },
       {
@@ -270,20 +274,20 @@ export class AuthenticationService {
       },
     );
     // Create and inject FIRESTORE DB AUTH TOKEN
-    const firestoreDBToken = await auth().createCustomToken(user.id);
+    // const firestoreDBToken = await auth().createCustomToken(user.id);
     return {
       id: user.id,
       participantId,
-      isOnboarded,
-      isConsentSigned,
+      // isOnboarded,
+      // isConsentSigned,
       firstName: user.firstName,
       lastName: user.lastName,
       email: user.email,
-      phoneNumber: user.phoneNumber,
+      // phoneNumber: user.phoneNumber,
       role: user.role,
       status: user.status,
       profileImage: user.profileImage,
-      dbToken: firestoreDBToken,
+      // dbToken: firestoreDBToken,
       token: this.jwtService.sign(
         {
           id: user.id,
