@@ -99,7 +99,7 @@ export class UserModel extends Model<UserModel> {
   @Column({
     type: DataType.STRING,
     // values: userStatuses,
-    defaultValue: userStatuses[1],
+    defaultValue: userStatuses[0], // Set active by default
   })
   status: string;
 
@@ -130,6 +130,46 @@ export class UserModel extends Model<UserModel> {
     type: DataType.STRING,
   })
   emailVerifyToken: string;
+
+  @Column({
+    type: DataType.TEXT,
+  })
+  address: string;
+
+  @Column({
+    type: DataType.STRING,
+  })
+  city: string;
+
+  @Column({
+    type: DataType.STRING,
+  })
+  country: string;
+
+  @Column({
+    type: DataType.STRING,
+  })
+  postcode: string;
+
+  @Column({
+    type: DataType.STRING,
+  })
+  gender: string;
+
+  @Column({
+    type: DataType.DATEONLY,
+  })
+  dob: string;
+
+  @Column({
+    type: DataType.FLOAT,
+  })
+  currentWeight: number;
+
+  @Column({
+    type: DataType.FLOAT,
+  })
+  height: number;
 
   @HasMany(() => UserConsentModel, 'userId')
   userConsents?: UserConsentModel[];

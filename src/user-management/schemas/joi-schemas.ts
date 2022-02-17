@@ -50,15 +50,14 @@ export const updateUserByIdSchema = Joi.object().keys({
   firstName: Joi.string(),
   lastName: Joi.string(),
   profileImage: Joi.string().allow(null),
-  status: Joi.string().valid(...userStatuses),
-  meetingLink: Joi.string(),
-  designation: Joi.string().max(255),
-  hospitalName: Joi.string().max(255),
-  hospitalAddress: Joi.string().max(255),
-  age: Joi.number()
-    .min(18)
-    .max(120),
-  nickname: Joi.string(),
+  address: Joi.string(),
+  city: Joi.string(),
+  country: Joi.string(),
+  postcode: Joi.string(),
+  gender: Joi.string(),
+  dob: Joi.string(),
+  currentWeight: Joi.number(),
+  height: Joi.number()
 });
 
 export const updateUserShippingAddressSchema = Joi.object().keys({

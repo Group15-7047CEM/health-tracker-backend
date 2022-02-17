@@ -256,6 +256,33 @@ export class UserManagementController {
     }
   }
 
+  @Get('profile')
+  @UseGuards(JwtAuthGuard)
+  @ApiTags('Users')
+  async getUserProfile(
+    @GetUser() currentUser,
+  ): Promise<DataResponseSkeleton<User>> {
+    try {
+      const currentUserId = currentUser.id;
+      const user = await this.userService.findById(currentUserId);
+      user.password = undefined;
+      user.passwords = undefined;
+      user["dataValues"]["passwords"] = undefined;
+      return new DataResponseBuilder().successResponse(
+        user,
+        'User details retrieved successfully.',
+      );
+    } catch (error) {
+      console.log({ error });
+      if (error instanceof BaseException) {
+        new ErrorResponseBuilder().buildAndThrowWithBaseException(error);
+      } else {
+        new ErrorResponseBuilder().throwInternalServer([error.message]);
+      }
+    }
+  }
+
+  /*
   @Get(':id')
   @UseGuards(JwtAuthGuard)
   @ApiOkResponse({ type: GetUserByIdResponseDto })
@@ -279,20 +306,21 @@ export class UserManagementController {
       }
     }
   }
-
+  */
+  
   @Put(':id')
   @UseGuards(JwtAuthGuard)
   @UsePipes(new JoiValidationPipe(updateUserByIdSchema))
-  @ApiOkResponse({ type: UpdateUserByIdResponseDto })
   @ApiTags('Users')
   async updateUserById(
     @Param('id') id: string,
-    @Body() data: UpdateUserByIdRequestDto,
+    @Body() data,
     @GetUser('role') userRole: string,
     @GetUser('id') userId: string,
   ): Promise<DataResponseSkeleton<User>> {
     try {
       const user = await this.userService.updateUserById(data, id, userRole, userId);
+      user['dataValues']['passwords'] = undefined;
       switch (data.status) {
         case 'active':
           return new DataResponseBuilder().successResponse(

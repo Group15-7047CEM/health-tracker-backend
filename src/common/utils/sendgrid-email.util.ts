@@ -4,6 +4,8 @@ import * as sendgridTransport from 'nodemailer-sendgrid-transport';
 export const sendEmailWithSendgrid = req => {
   const { SENDGRID_API_KEY, NOREPLY_EMAIL } = process.env;
 
+  // REMOVED SENDGRID
+  /*
   // Configure Nodemailer SendGrid Transporter
   const transporter = nodemailer.createTransport(
     sendgridTransport({
@@ -33,4 +35,6 @@ export const sendEmailWithSendgrid = req => {
       },
     );
   });
+  */
+
 };
