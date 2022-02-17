@@ -26,8 +26,12 @@ import { JwtStrategy, LocalStrategy } from './strategies';
       useFactory: async (configService: ConfigService) => ({
         ttl: configService.get<string>('CACHE_TTL'),
         store: redisStore,
-        host: configService.get<string>('CACHE_HOST'),
-        port: 6379,
+        // host: configService.get<string>('CACHE_HOST'),
+        // port: 6379,
+        url: configService.get<string>('CACHE_URL'),
+        tls: {
+          rejectUnauthorized: false,
+        },
       }),
       inject: [ConfigService],
     }),
