@@ -54,7 +54,7 @@ export const updateUserByIdSchema = Joi.object().keys({
   city: Joi.string(),
   country: Joi.string(),
   postcode: Joi.string(),
-  gender: Joi.string(),
+  gender: Joi.string().allow('male', 'female', 'other'),
   dob: Joi.string(),
   currentWeight: Joi.number(),
   height: Joi.number()
