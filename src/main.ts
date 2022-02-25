@@ -42,7 +42,8 @@ async function bootstrap() {
   const whitelist = [
     undefined, // For serving Backend API Docs
     'http://localhost:3000', // For frontend development
-    'http://localhost:4200',
+    'http://localhost:4200', // For frontend development
+    'http://localhost:8080',
     configService.get<string>('FRONTEND_BASE_URL'),
     configService.get<string>('BACKEND_BASE_URL'),
   ];
