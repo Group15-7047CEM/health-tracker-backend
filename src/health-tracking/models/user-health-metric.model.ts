@@ -54,7 +54,19 @@ export class UserHealthMetricModel extends Model<UserHealthMetricModel> {
     type: DataType.INTEGER,
     defaultValue: 0
   })
-  sleepMins: number; // datetime
+  sleepMins: number; // in mins
+
+  @Column({
+    type: DataType.ARRAY(DataType.JSON),
+    defaultValue: []
+  })
+  foodItems: object[]; // food, calories
+
+  @Column({
+    type: DataType.INTEGER,
+    defaultValue: 0
+  })
+  totalCalories: number; 
 
   @Column({
     type: DataType.DATEONLY,
