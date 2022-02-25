@@ -4,7 +4,7 @@ import {
 } from '@nestjs/common';
 
 import {
-  addWeightTracking, addStepTracking, getWaterIntakeReadings, getStepReadings, getWeightReadings, addWaterTracking, addSleepTracking, getSleepReadings,
+  addWeightTracking, addStepTracking, getWaterIntakeReadings, getStepReadings, getWeightReadings, addWaterTracking, addSleepTracking, getSleepReadings, addFoodTracking, getFoodReadings,
 } from './schemas';
 import { JoiValidationPipe } from 'src/common/pipes';
 import { DataResponseBuilder, DataResponseSkeleton } from 'src/common/http/response-builders/data';
@@ -140,6 +140,38 @@ export class HealthTrackingController {
     try {
       const sleepReadings = await this.healthTrackingService.getSleepReadings(userId, queryParams);
       return new DataResponseBuilder().successResponse(sleepReadings, 'Retrieved sleep readings successfully!');
+    } catch (error) {
+      if (error instanceof BaseException) {
+        new ErrorResponseBuilder().buildAndThrowWithBaseException(error);
+      } else {
+        new ErrorResponseBuilder().throwInternalServer([error.message]);
+      }
+    }
+  }
+
+  @Post('food')
+  @UseGuards(JwtAuthGuard)
+  @UsePipes(new JoiValidationPipe(addFoodTracking))
+  async addFoodTracking(@Body() data: any, @GetUser('id') userId: string): Promise<DataResponseSkeleton<any>> {
+    try {
+      const foodTracked = await this.healthTrackingService.addFoodTracking(userId, data);
+      return new DataResponseBuilder().createdResponse(foodTracked, 'Tracked food successfully!');
+    } catch (error) {
+      if (error instanceof BaseException) {
+        new ErrorResponseBuilder().buildAndThrowWithBaseException(error);
+      } else {
+        new ErrorResponseBuilder().throwInternalServer([error.message]);
+      }
+    }
+  }
+
+  @Get('food')
+  @UseGuards(JwtAuthGuard)
+  @UsePipes(new JoiValidationPipe(getFoodReadings))
+  async getFoodReadings(@Query() queryParams: any, @GetUser('id') userId: string): Promise<DataResponseSkeleton<any>> {
+    try {
+      const foodReadings = await this.healthTrackingService.getFoodReadings(userId, queryParams);
+      return new DataResponseBuilder().successResponse(foodReadings, 'Retrieved food readings successfully!');
     } catch (error) {
       if (error instanceof BaseException) {
         new ErrorResponseBuilder().buildAndThrowWithBaseException(error);

@@ -22,6 +22,12 @@ export const addSleepTracking = Joi.object().keys({
   sleepEndTime: Joi.date().required()
 });
 
+export const addFoodTracking = Joi.object().keys({
+  trackedDate: Joi.string().required(),
+  food: Joi.string().required(),
+  calories: Joi.number().required()
+});
+
 export const getWeightReadings = Joi.object().keys({
   startDate: Joi.string().required(),
   endDate: Joi.string().required(),
@@ -37,8 +43,12 @@ export const getStepReadings = Joi.object().keys({
   endDate: Joi.string().required(),
 });
 
-
 export const getSleepReadings = Joi.object().keys({
+  startDate: Joi.string().required(),
+  endDate: Joi.string().required(),
+});
+
+export const getFoodReadings = Joi.object().keys({
   startDate: Joi.string().required(),
   endDate: Joi.string().required(),
 });

@@ -54,7 +54,6 @@ export class HealthTrackingService {
       { userId, trackedDate: data.trackedDate },
       data
     );
-    // await this.sendNotificationsOnTrackedAction(userId, 'weight', data);
     return item;
   }
 
@@ -90,7 +89,6 @@ export class HealthTrackingService {
       { userId, trackedDate: data.trackedDate },
       data
     );
-    // await this.sendNotificationsOnTrackedAction(userId, 'weight', data);
     return item;
   }
 
@@ -101,8 +99,29 @@ export class HealthTrackingService {
       { userId, trackedDate: data.trackedDate },
       data
     );
-    // await this.sendNotificationsOnTrackedAction(userId, 'steps', data);
     return item;
+  }
+
+  async addFoodTracking(userId: string, data: any) {
+    data['userId'] = userId;
+    const { food, calories } = data;
+    let healthMetric = await UserHealthMetricModel.findOne({where: {userId, trackedDate: data.trackedDate}});
+    if (!healthMetric) {
+      // Item not found, create a new one
+      const createData = {
+        trackedDate: data.trackedDate,
+        foodItems: [{food: food, calories: calories}],
+        totalCalories: calories
+      }
+      healthMetric = await UserHealthMetricModel.create(createData);
+    } else {
+      let foodItems = healthMetric.foodItems;
+      foodItems.push({food, calories});
+      healthMetric.foodItems = foodItems;
+      healthMetric.totalCalories += calories;
+      await healthMetric.save();
+    }
+    return healthMetric;
   }
   
   async getWaterIntakeReadings(userId: string, queryParams: any) {
@@ -182,6 +201,26 @@ export class HealthTrackingService {
     return {
       sleepReadings: sleepReadings.rows,
       count: sleepReadings.count
+    };
+  }
+
+  async getFoodReadings(userId: string, queryParams: any) {
+    const {startDate, endDate, page, size} = queryParams;
+
+    const foodReadings = await UserHealthMetricModel.findAndCountAll({
+      where: {
+        userId,
+        trackedDate: {
+          [Op.between]: [startDate, endDate],
+        }
+      },
+      attributes: ['trackedDate', 'foodItems', 'totalCalories'],
+      order: [['trackedDate', 'DESC']],
+    });
+
+    return {
+      foodReadings: foodReadings.rows,
+      count: foodReadings.count
     };
   }
 
