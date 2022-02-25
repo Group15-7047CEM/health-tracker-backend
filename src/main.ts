@@ -44,17 +44,17 @@ async function bootstrap() {
     'http://localhost:3000', // For frontend development
     'http://localhost:4200', // For frontend development
     'http://localhost:8080',
-    'https://health-tracker-group15.herokuapp.com/',
-    configService.get<string>('FRONTEND_BASE_URL'),
+    'https://health-tracker-group15.herokuapp.com',
+    // configService.get<string>('FRONTEND_BASE_URL'),
     configService.get<string>('BACKEND_BASE_URL'),
   ];
   app.enableCors({
     origin: function(origin, callback) {
       if (whitelist.indexOf(origin) !== -1) {
-        // console.log("allowed cors for:", origin)
+        console.log("allowed cors for:", origin)
         callback(null, true);
       } else {
-        // console.log("blocked cors for:", origin)
+        console.log("blocked cors for:", origin)
         callback(new Error('Not allowed by CORS'));
       }
     },
